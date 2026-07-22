@@ -50,22 +50,7 @@ export default function MethodsPage() {
             <Ext href="https://huggingface.co/datasets/librarian-bots/model_cards_with_metadata">
               librarian-bots card datasets
             </Ext>
-            , rebuilt daily by the Hub&apos;s ML Librarian, with a raw-README
-            fallback. Nothing is scraped, and no weights or data files are
-            rehosted. Card summaries are truncated to about 400 characters with
-            emails and bare links stripped.
-          </p>
-        </Section>
-
-        <Section title="What is included">
-          <p>
-            The inhabited Hub, not all of it. A model qualifies with at least
-            200 downloads in the last month or 5 likes; a dataset with 100
-            downloads or 5 likes; plus the top 2,000 trending repos. The long
-            tail of near-duplicate quantizations and abandoned fine-tunes is
-            excluded from v1; an opt-in long-tail layer is on the roadmap.
-            Exact thresholds live in the pipeline and are tuned to keep the
-            corpus between 120k and 200k points.
+            , rebuilt daily by the Hub&apos;s ML Librarian.
           </p>
         </Section>
 
@@ -77,7 +62,7 @@ export default function MethodsPage() {
             <code className="font-mono text-[13px]">sentence-transformers/all-MiniLM-L6-v2</code>{" "}
             (384 dims), reduced with PCA to 50 dims, then projected to 2D with
             UMAP (n_neighbors 15, min_dist 0.05, cosine). Nearby points mean
-            similar descriptions. Distance is meaningful locally, not globally.
+            similar descriptions. Distance is meaningful only locally.
           </p>
         </Section>
 
@@ -93,31 +78,13 @@ export default function MethodsPage() {
           </p>
         </Section>
 
-        <Section title="Regions and names">
-          <p>
-            Clusters come from HDBSCAN at three granularities on the 50-dim
-            vectors. Names start as c-TF-IDF terms over member documents and
-            are curated by hand in a committed labels file. Density is a
-            downloads-weighted kernel density estimate; contours are its
-            isolines. Elevation is usage, nothing more.
-          </p>
-        </Section>
-
         <Section title="Search">
           <p>
             Name search is a raw byte scan over the id blob in a worker, no
-            index file. Semantic search is opt-in: your browser downloads the
+            index file. Semantic search is opt-in (and still being implemented properly) your browser downloads the
             same MiniLM weights (via transformers.js) plus 64-dim quantized
             vectors, and every query is embedded and ranked on your machine.
             Nothing you type leaves the page.
-          </p>
-        </Section>
-
-        <Section title="Cadence and cost">
-          <p>
-            A GitHub Actions job refreshes the data weekly. The app is static
-            hosting; the data lives on a Hugging Face dataset repo; total
-            running cost is zero. Analytics are cookieless page counts.
           </p>
         </Section>
       </article>
