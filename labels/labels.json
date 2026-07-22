@@ -1,0 +1,6593 @@
+{
+ "l1": {
+  "1": {
+   "label": "Personal fine-tunes",
+   "terms": [
+    "wegrthj",
+    "mit",
+    "jacobbieker",
+    "atom-in-the-universe",
+    "cc-by-nc-4.0",
+    "tranthanhdat2009",
+    "lethimai1992",
+    "son20011",
+    "albertflores3900",
+    "maianh2000"
+   ]
+  },
+  "2": {
+   "label": "Test and CI models",
+   "terms": [
+    "optimum-intel-internal-testing",
+    "safetensors",
+    "pytorch",
+    "tf",
+    "quantization",
+    "vllm",
+    "mxfp4",
+    "sglang",
+    "amd-quark",
+    "jamba"
+   ]
+  },
+  "3": {
+   "label": "Image and video generation",
+   "terms": [
+    "diffusers",
+    "text-to-image",
+    "diffusion-single-file",
+    "video",
+    "comfyui",
+    "generation",
+    "safetensors",
+    "image-to-image",
+    "stable-diffusion",
+    "wan2.2"
+   ]
+  },
+  "4": {
+   "label": "Biomedical text mining",
+   "terms": [
+    "biomedical",
+    "entity recognition",
+    "entities",
+    "clinical",
+    "drug",
+    "production-ready",
+    "disease",
+    "corpus",
+    "literature mining",
+    "graph construction"
+   ]
+  },
+  "5": {
+   "label": "Clinical entity recognition",
+   "terms": [
+    "token-classification",
+    "named-entity-recognition biomedical-nlp",
+    "openmed",
+    "transformers",
+    "safetensors",
+    "apache-2.0",
+    "molecular-biology",
+    "chem",
+    "drug-discovery pharmacology",
+    "bert"
+   ]
+  },
+  "6": {
+   "label": "Image classification",
+   "terms": [
+    "timm",
+    "image classification",
+    "transformers",
+    "imagenet-1k",
+    "image-classification",
+    "nvidia",
+    "siglip",
+    "vision",
+    "safetensors",
+    "classification feature"
+   ]
+  },
+  "7": {
+   "label": "Tabular datasets",
+   "terms": [
+    "language",
+    "polars",
+    "format",
+    "parquet",
+    "pandas",
+    "dask",
+    "image",
+    "video",
+    "annotations_creators",
+    "dtype string"
+   ]
+  },
+  "8": {
+   "label": "Speech and audio",
+   "terms": [
+    "speech",
+    "language",
+    "audio",
+    "transformers",
+    "asr",
+    "voice",
+    "wav2vec2",
+    "ctranslate2",
+    "transcribe.cpp",
+    "speaker"
+   ]
+  },
+  "9": {
+   "label": "LM Studio community",
+   "terms": [
+    "lm studio",
+    "community",
+    "mlx",
+    "accuracy reliability",
+    "studio disclaims",
+    "responsibility",
+    "program",
+    "creator",
+    "special thanks",
+    "time location"
+   ]
+  },
+  "10": {
+   "label": "Language models",
+   "terms": [
+    "language",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "image-text-to-text",
+    "reasoning",
+    "safetensors",
+    "qwen",
+    "apache-2.0",
+    "gguf"
+   ]
+  },
+  "11": {
+   "label": "Sentence embeddings",
+   "terms": [
+    "sentence-transformers",
+    "mteb",
+    "sentence-similarity",
+    "bert",
+    "language",
+    "deploy",
+    "azure",
+    "pytorch",
+    "feature-extraction",
+    "text-embeddings-inference"
+   ]
+  },
+  "12": {
+   "label": "MLX ports",
+   "terms": [
+    "mlx",
+    "text-generation",
+    "conversational",
+    "safetensors",
+    "bit",
+    "apache-2.0",
+    "apple-silicon",
+    "image-text-to-text",
+    "community",
+    "transformers"
+   ]
+  },
+  "13": {
+   "label": "GGUF archives",
+   "terms": [
+    "conversational richarderkhov",
+    "gguf",
+    "imatrix",
+    "conversational thedrummer",
+    "transformers",
+    "pruna-ai",
+    "apache-2.0",
+    "llama.cpp",
+    "unsloth",
+    "fiction"
+   ]
+  },
+  "14": {
+   "label": "Training-run outputs",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "safetensors gpt2",
+    "fpadovani",
+    "generated_from_trainer sft",
+    "trl",
+    "pytorch",
+    "gpt_neox",
+    "apache-2.0",
+    "sashaboguraev"
+   ]
+  },
+  "15": {
+   "label": "Azure deployments",
+   "terms": [
+    "transformers",
+    "azure",
+    "text-generation",
+    "deploy",
+    "safetensors",
+    "conversational",
+    "apache-2.0",
+    "llama",
+    "pytorch",
+    "helsinki-nlp"
+   ]
+  },
+  "16": {
+   "label": "Vision chat models",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "conversational",
+    "apache-2.0",
+    "safetensors",
+    "gguf",
+    "multimodal",
+    "qwen3_5",
+    "uncensored",
+    "unsloth"
+   ]
+  },
+  "17": {
+   "label": "GGUF quants",
+   "terms": [
+    "text-generation",
+    "gguf",
+    "conversational",
+    "apache-2.0",
+    "transformers",
+    "imatrix",
+    "bartowski",
+    "bit bit",
+    "llama.cpp",
+    "quantized"
+   ]
+  },
+  "18": {
+   "label": "Chat fine-tunes",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "safetensors",
+    "conversational",
+    "apache-2.0",
+    "llama",
+    "gguf",
+    "pytorch",
+    "bit",
+    "unsloth"
+   ]
+  },
+  "19": {
+   "label": "Mradermacher quants",
+   "terms": [
+    "transformers",
+    "gguf",
+    "mradermacher",
+    "conversational",
+    "imatrix",
+    "mergekit merge",
+    "mit",
+    "uncensored",
+    "llama",
+    "thebloke"
+   ]
+  },
+  "20": {
+   "label": "Uncensored quants",
+   "terms": [
+    "transformers",
+    "conversational mradermacher",
+    "gguf",
+    "apache-2.0",
+    "imatrix",
+    "uncensored",
+    "abliterated",
+    "mergekit",
+    "decensored",
+    "heretic"
+   ]
+  },
+  "0": {
+   "label": "Unmapped",
+   "terms": []
+  }
+ },
+ "l2": {
+  "1": {
+   "label": "Personal fine-tunes",
+   "terms": [
+    "atokforps"
+   ]
+  },
+  "2": {
+   "label": "Personal fine-tunes wegrthj",
+   "terms": [
+    "wegrthj",
+    "mit",
+    "jacobbieker",
+    "atom-in-the-universe",
+    "pysentimiento",
+    "cc-by-nc-4.0",
+    "lehoang2006",
+    "phamthibich2005",
+    "sakura-",
+    "sam3.1"
+   ]
+  },
+  "3": {
+   "label": "Time series forecasting",
+   "terms": [
+    "time series",
+    "forecasting",
+    "chronos",
+    "time-series",
+    "foundation",
+    "kronos",
+    "forecasts",
+    "ttm",
+    "k-line",
+    "financial"
+   ]
+  },
+  "4": {
+   "label": "Diffusion-single-file comfyui comfy-org",
+   "terms": [
+    "diffusion-single-file",
+    "comfyui",
+    "comfy-org",
+    "huggingface.co",
+    "kijai",
+    "repackaged",
+    "comfyanonymous.github.io",
+    "flux",
+    "hidream-o1-image",
+    "causvid"
+   ]
+  },
+  "5": {
+   "label": "Uncensored fine-tunes",
+   "terms": [
+    "hauhaucs",
+    "refusals",
+    "uncensored",
+    "aggressive",
+    "k_p",
+    "balanced",
+    "functional original",
+    "just chat",
+    "roadmaps",
+    "intended just"
+   ]
+  },
+  "6": {
+   "label": "Test model dumps",
+   "terms": [
+    "optimum-intel-internal-testing",
+    "safetensors",
+    "jamba",
+    "apache-2.0",
+    "mixtral",
+    "qwen3_vl",
+    "custom_code",
+    "tiny",
+    "cohere2",
+    "falcon_mamba"
+   ]
+  },
+  "7": {
+   "label": "Tiny test models",
+   "terms": [
+    "optimum-intel-internal-testing",
+    "pytorch",
+    "tf",
+    "tiny-random-",
+    "onnx",
+    "wav2vec2",
+    "image-to-text",
+    "gpt2",
+    "text-classification",
+    "camembert"
+   ]
+  },
+  "8": {
+   "label": "GLM chat models",
+   "terms": [
+    "glm-4.7",
+    "glm-4.5",
+    "glm-5.2",
+    "glm-5.1",
+    "z.ai",
+    "community check",
+    "api services",
+    "discord community",
+    "technical",
+    "api platform"
+   ]
+  },
+  "9": {
+   "label": "Nemotron reasoning",
+   "terms": [
+    "nvidia",
+    "reasoning",
+    "nemotron",
+    "community",
+    "transformers",
+    "queries tasks",
+    "text-generation",
+    "lm studio",
+    "freshness",
+    "conversational custom_code"
+   ]
+  },
+  "10": {
+   "label": "Diffusers text-to-image image-to-image",
+   "terms": [
+    "diffusers",
+    "text-to-image",
+    "image-to-image",
+    "diffusion",
+    "video",
+    "wan2.2",
+    "lora",
+    "comfyui",
+    "generation",
+    "wan2.1"
+   ]
+  },
+  "11": {
+   "label": "Token-classification named-entity-recognition biomedical-nlp",
+   "terms": [
+    "token-classification",
+    "named-entity-recognition biomedical-nlp",
+    "openmed",
+    "transformers",
+    "molecular-biology",
+    "chemical-entity-recognition",
+    "pharmacology",
+    "drug-discovery",
+    "safetensors",
+    "apache-2.0"
+   ]
+  },
+  "12": {
+   "label": "Anatomical biomedical anatomy",
+   "terms": [
+    "anatomical",
+    "biomedical",
+    "anatomy",
+    "entity",
+    "structures body",
+    "medical terminology",
+    "clinical",
+    "body parts",
+    "recognition",
+    "entities"
+   ]
+  },
+  "13": {
+   "label": "Cancer genetics entities",
+   "terms": [
+    "cancer genetics",
+    "entities",
+    "oncology",
+    "bionlp cg",
+    "cancer-related genetic",
+    "genetics cancer-related",
+    "biomedical",
+    "clinical",
+    "entity",
+    "specialized"
+   ]
+  },
+  "14": {
+   "label": "Species biomedical linnaeus",
+   "terms": [
+    "species",
+    "biomedical",
+    "linnaeus",
+    "entity",
+    "recognition",
+    "organism",
+    "taxonomic",
+    "clinical",
+    "literature",
+    "names"
+   ]
+  },
+  "15": {
+   "label": "Chemical biomedical entity",
+   "terms": [
+    "chemical",
+    "biomedical",
+    "entity",
+    "recognition",
+    "bc4chemd",
+    "biocreative",
+    "entities",
+    "clinical",
+    "compounds",
+    "substances"
+   ]
+  },
+  "16": {
+   "label": "Biomedical entity gene",
+   "terms": [
+    "biomedical",
+    "entity",
+    "gene",
+    "entities",
+    "protein",
+    "recognition",
+    "clinical",
+    "molecular",
+    "drug",
+    "corpus"
+   ]
+  },
+  "17": {
+   "label": "Leukemia chronic lymphocytic",
+   "terms": [
+    "leukemia",
+    "chronic lymphocytic",
+    "clinical",
+    "related chronic",
+    "cll",
+    "entities related",
+    "biomedical",
+    "entity",
+    "cancer",
+    "hematology"
+   ]
+  },
+  "18": {
+   "label": "Disease ncbi entities",
+   "terms": [
+    "disease",
+    "ncbi",
+    "entities",
+    "biomedical",
+    "openmed-ner-pathologydetect-",
+    "entity",
+    "recognition",
+    "clinical",
+    "drug",
+    "mesh online"
+   ]
+  },
+  "19": {
+   "label": "Disease entities biomedical",
+   "terms": [
+    "disease",
+    "entities",
+    "entity",
+    "biomedical",
+    "bc5cdr",
+    "biocreative",
+    "recognition",
+    "clinical",
+    "relation",
+    "drug"
+   ]
+  },
+  "20": {
+   "label": "Unsloth fine-tunes",
+   "terms": [
+    "feature-extraction",
+    "unslothai",
+    "safetensors llama",
+    "transformers",
+    "log statistics",
+    "statistics envs",
+    "envs breaking",
+    "deploy azure",
+    "repeat",
+    "lambda"
+   ]
+  },
+  "21": {
+   "label": "Compressed tensors",
+   "terms": [
+    "compressed-tensors",
+    "safetensors",
+    "forturne",
+    "redhatai",
+    "bit",
+    "nvfp4",
+    "vllm",
+    "qwen3_5",
+    "nvidia qwen3-vl-235b-a22b-instruct-",
+    "sakamakismile"
+   ]
+  },
+  "22": {
+   "label": "Paddlepaddle paddleocr image-to-text",
+   "terms": [
+    "paddlepaddle",
+    "paddleocr",
+    "image-to-text",
+    "document",
+    "pp-ocrv6",
+    "pp-doclayoutv3",
+    "recognition",
+    "official website",
+    "download sample",
+    "installation refer"
+   ]
+  },
+  "23": {
+   "label": "Open clip zero-shot-image-classification timm",
+   "terms": [
+    "open_clip",
+    "zero-shot-image-classification",
+    "timm",
+    "safetensors clip",
+    "openclip",
+    "dual",
+    "laion400m_e31",
+    "mit",
+    "pytorch safetensors",
+    "vit_large_patch14_clip_224. metaclip_2pt5b"
+   ]
+  },
+  "24": {
+   "label": "GGUF quant drops",
+   "terms": [
+    "output weights",
+    "arm",
+    "download",
+    "quants",
+    "imatrix",
+    "conversational llamacpp",
+    "quantization original",
+    "llama.cpp release",
+    "file branch",
+    "avx"
+   ]
+  },
+  "25": {
+   "label": "Pyannote-audio voice-activity-detection speech",
+   "terms": [
+    "pyannote-audio",
+    "voice-activity-detection",
+    "speech speaker",
+    "voice speech",
+    "audio voice",
+    "automatic-speech-recognition",
+    "overlapped-speech-detection",
+    "speaker-change-detection",
+    "speaker speaker-diarization",
+    "mit"
+   ]
+  },
+  "26": {
+   "label": "Depth estimation monocular",
+   "terms": [
+    "depth",
+    "estimation",
+    "monocular",
+    "dpt",
+    "lihe",
+    "noqa",
+    "e501",
+    "relative",
+    "unlabeled",
+    "sd-based"
+   ]
+  },
+  "27": {
+   "label": "Community lm studio",
+   "terms": [
+    "community",
+    "lm studio",
+    "accuracy reliability",
+    "studio disclaims",
+    "responsibility",
+    "special thanks",
+    "program",
+    "creator",
+    "errors corrected",
+    "sole"
+   ]
+  },
+  "28": {
+   "label": "Timm image-classification imagenet-1k",
+   "terms": [
+    "timm",
+    "image-classification",
+    "imagenet-1k",
+    "image classification",
+    "classification feature",
+    "transformers",
+    "pytorch",
+    "vision",
+    "stats params",
+    "activations image"
+   ]
+  },
+  "29": {
+   "label": "Clip image laion-5b",
+   "terms": [
+    "clip",
+    "image",
+    "laion-5b",
+    "zero-shot",
+    "classification",
+    "openai",
+    "hope",
+    "tower",
+    "acknowledgements citation",
+    "evaluation acknowledgements"
+   ]
+  },
+  "30": {
+   "label": "Siglip zero-shot image",
+   "terms": [
+    "siglip",
+    "zero-shot image",
+    "zero-shot-image-classification",
+    "image classification",
+    "vision",
+    "pre-trained webli",
+    "image-text",
+    "loss",
+    "global-local",
+    "classification encode"
+   ]
+  },
+  "31": {
+   "label": "Robotics lerobot manipulation",
+   "terms": [
+    "robotics",
+    "lerobot",
+    "manipulation",
+    "pkgs",
+    "amass",
+    "motion",
+    "video",
+    "retargeted",
+    "embodied",
+    "imitation-learning"
+   ]
+  },
+  "32": {
+   "label": "Internvl opengvlab huggingface.co",
+   "terms": [
+    "internvl",
+    "opengvlab",
+    "huggingface.co",
+    "chat demo",
+    "blog chat",
+    "quick-start documents",
+    "latest introduction",
+    "custom_code image-text-to-text",
+    "start quick-start",
+    "conversational multilingual"
+   ]
+  },
+  "33": {
+   "label": "Nvfp4 nvidia vllm",
+   "terms": [
+    "nvfp4",
+    "nvidia",
+    "vllm",
+    "quantized",
+    "optimizer",
+    "quantization",
+    "input",
+    "modelopt",
+    "format string",
+    "architecture"
+   ]
+  },
+  "34": {
+   "label": "Qat e2b e4b",
+   "terms": [
+    "qat",
+    "e2b e4b",
+    "gemma e2b",
+    "e4b a4b",
+    "q4_0",
+    "assistant",
+    "gemma family",
+    "compatibility",
+    "checkpoints",
+    "format native"
+   ]
+  },
+  "35": {
+   "label": "Gemma e4b e2b",
+   "terms": [
+    "gemma",
+    "e4b",
+    "e2b",
+    "google deepmind",
+    "tokens maintains",
+    "maintains multilingual",
+    "featuring dense",
+    "languages featuring",
+    "unsloth",
+    "environments ranging"
+   ]
+  },
+  "36": {
+   "label": "Transformers gemma text-generation",
+   "terms": [
+    "transformers",
+    "gemma",
+    "text-generation",
+    "image-text-to-text",
+    "google",
+    "conversational",
+    "safetensors",
+    "any-to-any",
+    "unsloth",
+    "eval-results"
+   ]
+  },
+  "37": {
+   "label": "Image multimodal document",
+   "terms": [
+    "image",
+    "multimodal",
+    "document",
+    "transformers",
+    "vision",
+    "visual",
+    "tasks",
+    "understanding",
+    "ocr",
+    "language"
+   ]
+  },
+  "38": {
+   "label": "MaziyarPanahi GGUFs",
+   "terms": [
+    "bit bit",
+    "maziyarpanahi",
+    "quantized bit",
+    "bit gguf",
+    "gguf mistral",
+    "mistral quantized",
+    "gguf text-generation",
+    "text-generation gguf",
+    "text-generation conversational",
+    "gguf quantized"
+   ]
+  },
+  "39": {
+   "label": "GGUF for desktop apps",
+   "terms": [
+    "gpu acceleration",
+    "bit bit",
+    "maziyarpanahi",
+    "web ui",
+    "gguf",
+    "macos silicon",
+    "windows macos",
+    "gui windows",
+    "llama.cpp",
+    "linux"
+   ]
+  },
+  "40": {
+   "label": "Ctranslate2 automatic-speech-recognition audio",
+   "terms": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "audio",
+    "whisper",
+    "asr",
+    "transcribe.cpp",
+    "nl ar",
+    "fo",
+    "systran",
+    "mms"
+   ]
+  },
+  "41": {
+   "label": "Speech audio wav2vec2",
+   "terms": [
+    "speech",
+    "audio",
+    "wav2vec2",
+    "transformers",
+    "common voice",
+    "asr",
+    "whisper",
+    "recognition",
+    "pytorch",
+    "wer"
+   ]
+  },
+  "42": {
+   "label": "MLX ports",
+   "terms": [
+    "mlx",
+    "lmstudio-community",
+    "image-text-to-text",
+    "conversational bit",
+    "text-generation",
+    "format qwen",
+    "converted",
+    "safetensors",
+    "refer original",
+    "apache-2.0"
+   ]
+  },
+  "43": {
+   "label": "LM Studio community",
+   "terms": [
+    "community",
+    "lm studio",
+    "mlx",
+    "disclaims",
+    "accuracy reliability",
+    "responsibility",
+    "program",
+    "creator",
+    "special thanks",
+    "apple"
+   ]
+  },
+  "44": {
+   "label": "Pythia pile eleutherai",
+   "terms": [
+    "pythia",
+    "pile",
+    "eleutherai",
+    "suite",
+    "seeds",
+    "interpretability",
+    "text-generation causal-lm",
+    "weight initialization",
+    "order",
+    "naming convention"
+   ]
+  },
+  "45": {
+   "label": "Unsloth notebooks",
+   "terms": [
+    "notebook",
+    "t4",
+    "llama",
+    "unsloth",
+    "faster",
+    "sharegpt",
+    "transformers",
+    "text-generation",
+    "vicuna",
+    "friendly add"
+   ]
+  },
+  "46": {
+   "label": "Transformers text-generation performance",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "performance",
+    "language",
+    "reasoning",
+    "code",
+    "attention",
+    "deepseek-r1",
+    "tokens",
+    "parameters"
+   ]
+  },
+  "47": {
+   "label": "Multilingual corpora",
+   "terms": [
+    "language",
+    "path v1.0",
+    "parquet config_name",
+    "train path",
+    "split train",
+    "ckb",
+    "azb",
+    "bjn",
+    "als",
+    "st"
+   ]
+  },
+  "48": {
+   "label": "Language audio automatic-speech-recognition",
+   "terms": [
+    "language",
+    "audio",
+    "automatic-speech-recognition",
+    "text-to-speech",
+    "polars",
+    "format",
+    "parquet",
+    "dask",
+    "multilinguality",
+    "crowdsourced"
+   ]
+  },
+  "49": {
+   "label": "Translation eval sets",
+   "terms": [
+    "normalization sentencepiece",
+    "test set",
+    "translation",
+    "set scores",
+    "opus",
+    "pre-processing normalization",
+    "marian",
+    "transformer-align",
+    "source languages",
+    "benchmarks helsinki-nlp"
+   ]
+  },
+  "50": {
+   "label": "Marian translation",
+   "terms": [
+    "azure helsinki-nlp",
+    "translation",
+    "marian text2text-generation",
+    "tf",
+    "transformers",
+    "deploy azure",
+    "pytorch",
+    "rust marian",
+    "tr model-index",
+    "jax marian"
+   ]
+  },
+  "51": {
+   "label": "Text-generation conversational qwen",
+   "terms": [
+    "text-generation",
+    "conversational qwen",
+    "gguf",
+    "chat qwen",
+    "code codeqwen",
+    "codeqwen chat",
+    "qwen qwen-coder",
+    "unsloth",
+    "transformers",
+    "apache-2.0"
+   ]
+  },
+  "52": {
+   "label": "Annotated corpora",
+   "terms": [
+    "language",
+    "annotations_creators",
+    "multilinguality monolingual",
+    "polars",
+    "parquet",
+    "expert-generated",
+    "pandas",
+    "format",
+    "crowdsourced",
+    "dtype string"
+   ]
+  },
+  "53": {
+   "label": "Qwen deployments",
+   "terms": [
+    "azure qwen",
+    "text-generation",
+    "transformers",
+    "conversational",
+    "deploy azure",
+    "safetensors qwen2",
+    "apache-2.0",
+    "chat",
+    "safetensors qwen3",
+    "fp8 deploy"
+   ]
+  },
+  "54": {
+   "label": "Qwen vision deployments",
+   "terms": [
+    "azure qwen",
+    "image-text-to-text",
+    "transformers",
+    "deploy azure",
+    "conversational eval-results",
+    "safetensors",
+    "apache-2.0",
+    "fp8 deploy",
+    "qwen3_5",
+    "qwen3_vl"
+   ]
+  },
+  "55": {
+   "label": "Image-text-to-text unsloth transformers",
+   "terms": [
+    "image-text-to-text",
+    "unsloth",
+    "transformers",
+    "conversational",
+    "qwen3_5",
+    "apache-2.0",
+    "gguf",
+    "safetensors",
+    "qwen2_5_vl",
+    "imatrix"
+   ]
+  },
+  "56": {
+   "label": "Visual spatial enhanced",
+   "terms": [
+    "visual",
+    "spatial",
+    "enhanced",
+    "reasoning",
+    "perception",
+    "video",
+    "stronger",
+    "grounding",
+    "recognizes elements",
+    "delivers comprehensive"
+   ]
+  },
+  "0": {
+   "label": "Unmapped",
+   "terms": []
+  }
+ },
+ "l3": {
+  "1": {
+   "label": "Personal fine-tunes",
+   "terms": [
+    "atokforps"
+   ]
+  },
+  "2": {
+   "label": "Personal fine-tunes wegrthj",
+   "terms": [
+    "wegrthj",
+    "mit",
+    "atom-in-the-universe",
+    "jacobbieker",
+    "pysentimiento",
+    "hoanggiabao1998",
+    "hiepp1",
+    "hoangthuytrang1990",
+    "hoangthimy1995",
+    "hoanglongan2009"
+   ]
+  },
+  "3": {
+   "label": "Time series forecasting",
+   "terms": [
+    "time series",
+    "forecasting",
+    "chronos",
+    "time-series",
+    "series foundation",
+    "kronos",
+    "forecasts",
+    "ttm",
+    "k-line",
+    "amazon"
+   ]
+  },
+  "4": {
+   "label": "Diffusion-single-file comfyui comfy-org",
+   "terms": [
+    "diffusion-single-file",
+    "comfyui",
+    "comfy-org",
+    "repackaged",
+    "comfyanonymous.github.io",
+    "flux",
+    "hunyuan3d",
+    "kijai",
+    "hidream-o1-image",
+    "real-esrgan"
+   ]
+  },
+  "5": {
+   "label": "Uncensored fine-tunes",
+   "terms": [
+    "uncensored",
+    "hauhaucs",
+    "refusals",
+    "aggressive",
+    "k_p",
+    "balanced",
+    "roadmaps projects",
+    "updates roadmaps",
+    "just chat",
+    "functional original"
+   ]
+  },
+  "6": {
+   "label": "Test model dumps",
+   "terms": [
+    "optimum-intel-internal-testing",
+    "safetensors",
+    "jamba",
+    "apache-2.0",
+    "mixtral",
+    "qwen3_vl",
+    "custom_code",
+    "undergo",
+    "tiny",
+    "falcon_mamba"
+   ]
+  },
+  "7": {
+   "label": "Tiny test models",
+   "terms": [
+    "optimum-intel-internal-testing",
+    "pytorch",
+    "tf",
+    "tiny-random-",
+    "onnx",
+    "wav2vec2",
+    "gpt2",
+    "image-to-text",
+    "text-classification",
+    "wavlm"
+   ]
+  },
+  "8": {
+   "label": "GLM chat models",
+   "terms": [
+    "glm-4.7",
+    "glm-4.5",
+    "glm-5.2",
+    "glm-5.1",
+    "z.ai",
+    "api services",
+    "community check",
+    "discord community",
+    "sglang",
+    "api platform"
+   ]
+  },
+  "9": {
+   "label": "Nemotron reasoning",
+   "terms": [
+    "nvidia",
+    "reasoning",
+    "nemotron",
+    "community",
+    "text-generation",
+    "transformers",
+    "queries tasks",
+    "lm studio",
+    "freshness",
+    "final"
+   ]
+  },
+  "10": {
+   "label": "Diffusers text-to-image diffusion",
+   "terms": [
+    "diffusers",
+    "text-to-image",
+    "diffusion",
+    "lora",
+    "image-to-image",
+    "anime",
+    "stable",
+    "steps",
+    "flux",
+    "safetensors"
+   ]
+  },
+  "11": {
+   "label": "Wan2.1 wan2.2 video",
+   "terms": [
+    "wan2.1",
+    "wan2.2",
+    "video",
+    "diffusers",
+    "generation",
+    "consumer-grade gpus",
+    "wan open",
+    "open advanced",
+    "wan-ai",
+    "cinematic"
+   ]
+  },
+  "12": {
+   "label": "Token-classification openmed named-entity-recognition",
+   "terms": [
+    "token-classification",
+    "openmed",
+    "named-entity-recognition",
+    "biomedical-nlp",
+    "transformers",
+    "molecular-biology",
+    "drug-discovery pharmacology",
+    "chem",
+    "safetensors",
+    "apache-2.0"
+   ]
+  },
+  "13": {
+   "label": "Anatomical biomedical anatomy",
+   "terms": [
+    "anatomical",
+    "biomedical",
+    "anatomy",
+    "entity",
+    "structures body",
+    "medical terminology",
+    "clinical",
+    "body parts",
+    "entities",
+    "recognition"
+   ]
+  },
+  "14": {
+   "label": "Cancer genetics entities",
+   "terms": [
+    "cancer genetics",
+    "entities",
+    "oncology",
+    "cg",
+    "cancer-related genetic",
+    "genetics cancer-related",
+    "bionlp",
+    "biomedical",
+    "clinical",
+    "entity"
+   ]
+  },
+  "15": {
+   "label": "Species biomedical linnaeus",
+   "terms": [
+    "species",
+    "biomedical",
+    "linnaeus",
+    "entity",
+    "recognition",
+    "organism",
+    "clinical",
+    "taxonomic",
+    "literature",
+    "names"
+   ]
+  },
+  "16": {
+   "label": "Chemical biomedical entity",
+   "terms": [
+    "chemical",
+    "biomedical",
+    "entity",
+    "recognition",
+    "bc4chemd",
+    "biocreative",
+    "entities",
+    "clinical",
+    "compounds",
+    "substances"
+   ]
+  },
+  "17": {
+   "label": "Biomedical gene entity",
+   "terms": [
+    "biomedical",
+    "gene",
+    "entity",
+    "entities",
+    "protein",
+    "recognition",
+    "clinical",
+    "molecular biology",
+    "drug",
+    "corpus"
+   ]
+  },
+  "18": {
+   "label": "Leukemia lymphocytic chronic",
+   "terms": [
+    "leukemia",
+    "lymphocytic",
+    "chronic",
+    "clinical",
+    "cll",
+    "entities related",
+    "biomedical",
+    "entity",
+    "openmed-ner-bloodcancerdetect-",
+    "hematology cancer"
+   ]
+  },
+  "19": {
+   "label": "Disease ncbi entities",
+   "terms": [
+    "disease",
+    "ncbi",
+    "entities",
+    "biomedical",
+    "openmed-ner-pathologydetect-",
+    "entity",
+    "recognition",
+    "clinical",
+    "drug",
+    "gold-standard"
+   ]
+  },
+  "20": {
+   "label": "Unsloth fine-tunes",
+   "terms": [
+    "disease",
+    "entities",
+    "entity",
+    "biomedical",
+    "biocreative",
+    "bc5cdr",
+    "recognition",
+    "clinical",
+    "relation",
+    "drug"
+   ]
+  },
+  "21": {
+   "label": "Compressed tensors",
+   "terms": [
+    "llama feature-extraction",
+    "unslothai",
+    "feature-extraction transformers",
+    "safetensors llama",
+    "transformers transformers",
+    "log statistics",
+    "envs breaking",
+    "statistics envs",
+    "transformers safetensors",
+    "azure"
+   ]
+  },
+  "22": {
+   "label": "Compressed-tensors safetensors forturne",
+   "terms": [
+    "compressed-tensors",
+    "safetensors",
+    "forturne",
+    "redhatai",
+    "bit",
+    "nvfp4",
+    "vllm",
+    "qwen1.5-moe-a2.7b-chat-",
+    "qwen3_5",
+    "sakamakismile"
+   ]
+  },
+  "23": {
+   "label": "Paddlepaddle paddleocr image-to-text",
+   "terms": [
+    "paddlepaddle",
+    "paddleocr",
+    "image-to-text",
+    "document",
+    "pp-doclayoutv3",
+    "pp-ocrv6",
+    "recognition",
+    "official website",
+    "detection",
+    "neck"
+   ]
+  },
+  "24": {
+   "label": "GGUF quant drops",
+   "terms": [
+    "open_clip",
+    "zero-shot-image-classification",
+    "timm",
+    "safetensors clip",
+    "openclip",
+    "dual",
+    "laion400m_e31",
+    "mit",
+    "pytorch safetensors",
+    "vit_large_patch14_clip_224."
+   ]
+  },
+  "25": {
+   "label": "Output weights quants",
+   "terms": [
+    "output weights",
+    "quants",
+    "arm",
+    "download",
+    "imatrix",
+    "llamacpp",
+    "file branch",
+    "llama.cpp release",
+    "quantization original",
+    "avx"
+   ]
+  },
+  "26": {
+   "label": "Pyannote-audio voice-activity-detection speech",
+   "terms": [
+    "pyannote-audio",
+    "voice-activity-detection",
+    "speech speaker",
+    "audio voice",
+    "voice speech",
+    "overlapped-speech-detection",
+    "automatic-speech-recognition",
+    "speaker-change-detection",
+    "speaker speaker-diarization",
+    "speaker-segmentation"
+   ]
+  },
+  "27": {
+   "label": "Depth estimation monocular",
+   "terms": [
+    "depth",
+    "estimation",
+    "monocular",
+    "dpt",
+    "lihe",
+    "relative",
+    "e501",
+    "noqa",
+    "unlabeled",
+    "sd-based"
+   ]
+  },
+  "28": {
+   "label": "Community lm studio",
+   "terms": [
+    "community",
+    "lm studio",
+    "disclaims",
+    "accuracy reliability",
+    "responsibility",
+    "program",
+    "creator",
+    "special thanks",
+    "corrected",
+    "sole"
+   ]
+  },
+  "29": {
+   "label": "Timm imagenet-1k image-classification",
+   "terms": [
+    "timm",
+    "imagenet-1k",
+    "image-classification",
+    "image classification",
+    "classification feature",
+    "vision",
+    "transformers",
+    "stats params",
+    "pytorch",
+    "gmacs activations"
+   ]
+  },
+  "30": {
+   "label": "Clip image laion-5b",
+   "terms": [
+    "clip",
+    "image",
+    "laion-5b",
+    "zero-shot",
+    "classification",
+    "openai",
+    "tower",
+    "hope",
+    "mlfoundations",
+    "evaluation acknowledgements"
+   ]
+  },
+  "31": {
+   "label": "Siglip zero-shot image",
+   "terms": [
+    "siglip",
+    "zero-shot image",
+    "vision",
+    "zero-shot-image-classification",
+    "image classification",
+    "pre-trained webli",
+    "classification image-text",
+    "loss",
+    "image-text retrieval",
+    "extends pretraining"
+   ]
+  },
+  "32": {
+   "label": "Image-classification medical-imaging image-segmentation",
+   "terms": [
+    "image-classification",
+    "medical-imaging",
+    "image-segmentation language",
+    "flare-medfm",
+    "multimodal vision-language",
+    "diagnostic-imaging",
+    "huggingscience",
+    "mr-rate",
+    "radiology science",
+    "computer-vision foundation-model"
+   ]
+  },
+  "33": {
+   "label": "Transformers ltp pytorch",
+   "terms": [
+    "transformers",
+    "ltp",
+    "pytorch",
+    "circulus",
+    "electra",
+    "rhasspy",
+    "jax",
+    "mit",
+    "bert",
+    "rust"
+   ]
+  },
+  "34": {
+   "label": "Robotics lerobot manipulation",
+   "terms": [
+    "robotics",
+    "lerobot",
+    "manipulation",
+    "pkgs",
+    "amass",
+    "video",
+    "motion",
+    "retargeted",
+    "embodied",
+    "imitation-learning"
+   ]
+  },
+  "35": {
+   "label": "Internvl opengvlab huggingface.co",
+   "terms": [
+    "internvl",
+    "opengvlab",
+    "huggingface.co",
+    "blog chat",
+    "chat demo",
+    "quick-start documents",
+    "latest introduction",
+    "conversational multilingual",
+    "start quick-start",
+    "custom_code image-text-to-text"
+   ]
+  },
+  "36": {
+   "label": "Nvfp4 nvidia quantized",
+   "terms": [
+    "nvfp4",
+    "nvidia",
+    "quantized",
+    "vllm",
+    "optimizer",
+    "quantization",
+    "input",
+    "modelopt",
+    "format string",
+    "fp8"
+   ]
+  },
+  "37": {
+   "label": "Qat e2b e4b",
+   "terms": [
+    "qat",
+    "e2b",
+    "e4b",
+    "gemma",
+    "q4_0",
+    "a4b",
+    "assistant",
+    "compatibility",
+    "checkpoints",
+    "format native"
+   ]
+  },
+  "38": {
+   "label": "MaziyarPanahi GGUFs",
+   "terms": [
+    "gemma",
+    "e4b",
+    "e2b",
+    "google deepmind",
+    "featuring dense",
+    "tokens maintains",
+    "maintains multilingual",
+    "languages featuring",
+    "unsloth",
+    "ranging high-end"
+   ]
+  },
+  "39": {
+   "label": "GGUF for desktop apps",
+   "terms": [
+    "transformers",
+    "gemma",
+    "text-generation",
+    "image-text-to-text",
+    "google",
+    "conversational",
+    "safetensors",
+    "any-to-any",
+    "unsloth",
+    "eval-results"
+   ]
+  },
+  "40": {
+   "label": "Image multimodal document",
+   "terms": [
+    "image",
+    "multimodal",
+    "document",
+    "vision",
+    "transformers",
+    "visual",
+    "ocr",
+    "understanding",
+    "tasks",
+    "language"
+   ]
+  },
+  "41": {
+   "label": "Bit maziyarpanahi quantized",
+   "terms": [
+    "bit bit",
+    "maziyarpanahi",
+    "quantized bit",
+    "gguf",
+    "mistral quantized",
+    "text-generation",
+    "conversational",
+    "imatrix",
+    "transformers",
+    "hi es"
+   ]
+  },
+  "42": {
+   "label": "MLX ports",
+   "terms": [
+    "accel",
+    "bit bit",
+    "gpu",
+    "web ui",
+    "maziyarpanahi",
+    "gguf",
+    "macos",
+    "gui windows",
+    "llama.cpp",
+    "linux"
+   ]
+  },
+  "43": {
+   "label": "LM Studio community",
+   "terms": [
+    "ctranslate2",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "asr",
+    "nl ar",
+    "transcribe.cpp",
+    "fo",
+    "haw ln",
+    "tr pl"
+   ]
+  },
+  "44": {
+   "label": "Mlx lmstudio-community image-text-to-text",
+   "terms": [
+    "mlx",
+    "lmstudio-community",
+    "image-text-to-text",
+    "bit",
+    "conversational",
+    "text-generation",
+    "converted",
+    "format qwen",
+    "safetensors",
+    "refer original"
+   ]
+  },
+  "45": {
+   "label": "Unsloth notebooks",
+   "terms": [
+    "community",
+    "lm studio",
+    "mlx",
+    "responsibility",
+    "disclaims",
+    "accuracy reliability",
+    "program",
+    "creator",
+    "special thanks",
+    "apple"
+   ]
+  },
+  "46": {
+   "label": "Speech common voice",
+   "terms": [
+    "speech",
+    "common voice",
+    "wav2vec2",
+    "input sampled",
+    "audio",
+    "evaluation",
+    "wer",
+    "transformers",
+    "test",
+    "directly language"
+   ]
+  },
+  "47": {
+   "label": "Multilingual corpora",
+   "terms": [
+    "automatic-speech-recognition",
+    "wav2vec2",
+    "transformers",
+    "mozilla-foundation",
+    "xlsr-fine-tuning-week",
+    "model-index",
+    "audio",
+    "hf-asr-leaderboard",
+    "pytorch",
+    "common_voice"
+   ]
+  },
+  "48": {
+   "label": "Pythia pile eleutherai",
+   "terms": [
+    "pythia",
+    "pile",
+    "eleutherai",
+    "suite",
+    "seeds",
+    "text-generation causal-lm",
+    "weight initialization",
+    "interpretability research",
+    "order",
+    "varied"
+   ]
+  },
+  "49": {
+   "label": "Translation eval sets",
+   "terms": [
+    "notebook",
+    "llama",
+    "t4",
+    "unsloth",
+    "faster",
+    "text-generation",
+    "sharegpt",
+    "transformers",
+    "vicuna",
+    "finetune"
+   ]
+  },
+  "50": {
+   "label": "Marian translation",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "performance",
+    "reasoning",
+    "language",
+    "code",
+    "tasks",
+    "attention",
+    "tokens",
+    "parameters"
+   ]
+  },
+  "51": {
+   "label": "Language path v1.0",
+   "terms": [
+    "language",
+    "path v1.0",
+    "parquet config_name",
+    "train path",
+    "split train",
+    "ckb",
+    "bjn",
+    "azb",
+    "als",
+    "st"
+   ]
+  },
+  "52": {
+   "label": "Annotated corpora",
+   "terms": [
+    "language",
+    "audio",
+    "automatic-speech-recognition",
+    "text-to-speech",
+    "polars",
+    "format",
+    "parquet",
+    "dask",
+    "multilinguality",
+    "pandas"
+   ]
+  },
+  "53": {
+   "label": "Qwen deployments",
+   "terms": [
+    "test set",
+    "normalization sentencepiece",
+    "opus",
+    "translation",
+    "set scores",
+    "download original",
+    "pre-processing normalization",
+    "marian",
+    "transformer-align",
+    "sentencepiece download"
+   ]
+  },
+  "54": {
+   "label": "Qwen vision deployments",
+   "terms": [
+    "azure helsinki-nlp",
+    "translation",
+    "marian text2text-generation",
+    "pytorch tf",
+    "transformers",
+    "tf marian",
+    "deploy azure",
+    "rust marian",
+    "jax marian",
+    "tr model-index"
+   ]
+  },
+  "55": {
+   "label": "Text-generation conversational qwen",
+   "terms": [
+    "text-generation",
+    "conversational qwen",
+    "gguf",
+    "chat qwen",
+    "codeqwen chat",
+    "code codeqwen",
+    "qwen qwen-coder",
+    "unsloth",
+    "transformers",
+    "apache-2.0"
+   ]
+  },
+  "56": {
+   "label": "Language annotations creators multilinguality",
+   "terms": [
+    "language",
+    "annotations_creators",
+    "multilinguality monolingual",
+    "polars",
+    "format parquet",
+    "expert-generated",
+    "pandas",
+    "crowdsourced",
+    "dtype string",
+    "supported tasks"
+   ]
+  },
+  "57": {
+   "label": "Qwen research models",
+   "terms": [
+    "azure qwen",
+    "text-generation",
+    "transformers",
+    "conversational",
+    "deploy azure",
+    "safetensors qwen2",
+    "apache-2.0",
+    "chat",
+    "safetensors qwen3",
+    "fp8 deploy"
+   ]
+  },
+  "58": {
+   "label": "Azure qwen image-text-to-text",
+   "terms": [
+    "azure qwen",
+    "image-text-to-text",
+    "transformers",
+    "deploy azure",
+    "conversational eval-results",
+    "safetensors",
+    "apache-2.0",
+    "fp8 deploy",
+    "qwen3_5",
+    "qwen3_vl"
+   ]
+  },
+  "59": {
+   "label": "Image-text-to-text unsloth transformers",
+   "terms": [
+    "image-text-to-text",
+    "unsloth",
+    "transformers",
+    "conversational",
+    "qwen3_5",
+    "apache-2.0",
+    "gguf",
+    "qwen2_5_vl",
+    "safetensors",
+    "imatrix"
+   ]
+  },
+  "60": {
+   "label": "Visual spatial reasoning",
+   "terms": [
+    "visual",
+    "spatial",
+    "reasoning",
+    "enhanced",
+    "perception",
+    "stronger",
+    "video",
+    "grounding",
+    "understanding native",
+    "second-level indexing"
+   ]
+  },
+  "61": {
+   "label": "Reasoning agents",
+   "terms": [
+    "qwen3.5",
+    "learning",
+    "delta networks",
+    "benchmarks efficient",
+    "combined sparse",
+    "agents visual",
+    "networks combined",
+    "transformers",
+    "mixture-of-experts deliver",
+    "reinforcement"
+   ]
+  },
+  "62": {
+   "label": "Qwen2.5-coder codeqwen open-source",
+   "terms": [
+    "qwen2.5-coder",
+    "codeqwen",
+    "open-source codellm",
+    "meet needs",
+    "matching gpt-4o",
+    "gpt-4o comprehensive",
+    "codellm coding",
+    "covered mainstream",
+    "parameters meet",
+    "abilities matching"
+   ]
+  },
+  "63": {
+   "label": "Mteb split test",
+   "terms": [
+    "mteb",
+    "split test",
+    "config",
+    "sentence-transformers",
+    "f1",
+    "metrics",
+    "default split",
+    "sentence-similarity",
+    "ap",
+    "arguana"
+   ]
+  },
+  "64": {
+   "label": "TRL demos",
+   "terms": [
+    "mode",
+    "capabilities multilingual",
+    "reasoning",
+    "agent capabilities",
+    "thinking",
+    "qwen3",
+    "logical",
+    "instruction following",
+    "agent-based tasks",
+    "immersive"
+   ]
+  },
+  "65": {
+   "label": "Video datasets",
+   "terms": [
+    "qwen2.5",
+    "language",
+    "tokens",
+    "attention",
+    "series qwen",
+    "instruction-tuned",
+    "qkv",
+    "ranging billion",
+    "coding mathematics",
+    "qwen large"
+   ]
+  },
+  "66": {
+   "label": "Image folder datasets",
+   "terms": [
+    "llama",
+    "text-generation",
+    "facebook meta",
+    "transformers",
+    "meta pytorch",
+    "es th",
+    "pt hi",
+    "hi es",
+    "fr pt",
+    "th eval-results"
+   ]
+  },
+  "67": {
+   "label": "Tabular datasets",
+   "terms": [
+    "trl",
+    "unit tests",
+    "built unit",
+    "text-generation",
+    "transformers",
+    "minimal",
+    "conversational",
+    "tiny",
+    "safetensors",
+    "image-text-to-text"
+   ]
+  },
+  "68": {
+   "label": "Video kkail8 mit",
+   "terms": [
+    "video",
+    "kkail8",
+    "mit",
+    "format csv",
+    "tabular",
+    "dask",
+    "polars",
+    "document",
+    "image"
+   ]
+  },
+  "69": {
+   "label": "Format imagefolder icdn14",
+   "terms": [
+    "format imagefolder",
+    "icdn14",
+    "icdn11",
+    "icdn13",
+    "onfdata",
+    "icdn12",
+    "webdataset",
+    "preezy02",
+    "primed63453",
+    "mastrotv1"
+   ]
+  },
+  "70": {
+   "label": "Polars format parquet",
+   "terms": [
+    "polars",
+    "format parquet",
+    "dask",
+    "pandas",
+    "tabular",
+    "format json",
+    "lmms-lab",
+    "image",
+    "optimized-parquet",
+    "parquet format"
+   ]
+  },
+  "71": {
+   "label": "Bert masked beto",
+   "terms": [
+    "bert",
+    "masked",
+    "beto",
+    "word masking",
+    "fill-mask",
+    "uncased",
+    "wikipedia",
+    "language modeling",
+    "pretrained",
+    "modeling mlm"
+   ]
+  },
+  "72": {
+   "label": "Sentence-transformers sentence-similarity text-embeddings-inference",
+   "terms": [
+    "sentence-transformers",
+    "sentence-similarity",
+    "text-embeddings-inference",
+    "cross-encoder",
+    "feature-extraction",
+    "semantic search",
+    "dense vector",
+    "vector space",
+    "embedding-data",
+    "usage"
+   ]
+  },
+  "73": {
+   "label": "Transformers bert azure",
+   "terms": [
+    "transformers",
+    "bert",
+    "azure",
+    "pytorch",
+    "deploy",
+    "fill-mask",
+    "token-classification",
+    "text-classification",
+    "jax",
+    "feature-extraction"
+   ]
+  },
+  "74": {
+   "label": "Output weights download",
+   "terms": [
+    "output weights",
+    "download",
+    "arm",
+    "quants",
+    "imatrix",
+    "file",
+    "avx",
+    "run",
+    "sure hugginface-cli",
+    "hugginface-cli installed"
+   ]
+  },
+  "75": {
+   "label": "Safetensors gemma2 gemma",
+   "terms": [
+    "safetensors gemma2",
+    "gemma safetensors",
+    "safetensors gemma3",
+    "thedrummer",
+    "safetensors gemma4",
+    "henry236",
+    "gemma4_unified",
+    "axolotl-ai-co",
+    "gemini3.1",
+    "gemma4 bit"
+   ]
+  },
+  "76": {
+   "label": "Feature-extraction transformers custom code",
+   "terms": [
+    "feature-extraction",
+    "transformers",
+    "custom_code",
+    "safetensors",
+    "pytorch",
+    "fill-mask",
+    "ntv3",
+    "dna masked-lm",
+    "mit",
+    "minchul"
+   ]
+  },
+  "77": {
+   "label": "Biomedical entity recognition",
+   "terms": [
+    "biomedical",
+    "entity",
+    "entities",
+    "recognition",
+    "clinical",
+    "drug",
+    "production-ready",
+    "specialized",
+    "literature mining",
+    "gene"
+   ]
+  },
+  "78": {
+   "label": "Arc-agi-3 agent-trajectories agentnativeresearchlab",
+   "terms": [
+    "arc-agi-3 agent-trajectories",
+    "agentnativeresearchlab",
+    "llm-agent world-model",
+    "arc-agi arc-agi-3",
+    "game-playing llm-agent",
+    "agent-trajectories game-playing",
+    "reinforcement-learning",
+    "cc-by-4.0",
+    "language",
+    "world-model claude"
+   ]
+  },
+  "79": {
+   "label": "Text-to-speech mlx-audio mlx-community",
+   "terms": [
+    "text-to-speech",
+    "mlx-audio",
+    "mlx-community",
+    "tts",
+    "safetensors",
+    "automatic-speech-recognition",
+    "generation voice",
+    "speech speech",
+    "speech generation",
+    "audio-to-audio"
+   ]
+  },
+  "80": {
+   "label": "Apache-2.0 submission kernels",
+   "terms": [
+    "apache-2.0",
+    "submission",
+    "kernels",
+    "overrides",
+    "turboderp",
+    "exl3",
+    "gguf",
+    "job",
+    "leaderboard",
+    "trial"
+   ]
+  },
+  "81": {
+   "label": "Sequelbox creative analytical",
+   "terms": [
+    "sequelbox",
+    "creative analytical",
+    "rationality",
+    "analytical expert",
+    "architect engineer",
+    "developer creative",
+    "engineer developer",
+    "problem-solving architect",
+    "azure aws",
+    "aws gcp"
+   ]
+  },
+  "82": {
+   "label": "Lerobot-raw apache-2.0 lerobot",
+   "terms": [
+    "lerobot-raw",
+    "apache-2.0 lerobot",
+    "lerobot apache-2.0",
+    "lerobot safetensors",
+    "robotics",
+    "smolvla",
+    "vibecuisine",
+    "act",
+    "episodes",
+    "malware"
+   ]
+  },
+  "83": {
+   "label": "Gliner token-classification entity",
+   "terms": [
+    "gliner",
+    "token-classification entity",
+    "shot biomedical-nlp",
+    "zero-shot zero-shot-ner",
+    "zero-shot-ner zero",
+    "named-entity-recognition zero-shot",
+    "recognition named-entity-recognition",
+    "pytorch token-classification",
+    "zero shot",
+    "openmed"
+   ]
+  },
+  "84": {
+   "label": "Paddleocr paddlepaddle image-to-text",
+   "terms": [
+    "paddleocr",
+    "paddlepaddle",
+    "image-to-text",
+    "textline_recognition",
+    "onnx ocr",
+    "apache-2.0",
+    "zh",
+    "textline_detection",
+    "image-text-to-text",
+    "pp-ocrv6"
+   ]
+  },
+  "85": {
+   "label": "Visual image-text-to-text transformers",
+   "terms": [
+    "visual",
+    "image-text-to-text",
+    "transformers",
+    "multimodal",
+    "reasoning",
+    "understanding",
+    "spatial",
+    "qwen3-vl",
+    "qwen3.5",
+    "video"
+   ]
+  },
+  "86": {
+   "label": "Gripper lerobot end-effector",
+   "terms": [
+    "gripper",
+    "lerobot",
+    "end-effector",
+    "scene objects",
+    "shape resolution",
+    "dtype video",
+    "video shape",
+    "resolution codec",
+    "sensors",
+    "teleoperation"
+   ]
+  },
+  "87": {
+   "label": "Apache-2.0 safetensors qwen2",
+   "terms": [
+    "apache-2.0 safetensors",
+    "safetensors qwen2",
+    "safetensors qwen3",
+    "bit",
+    "qwen3_5",
+    "custom_code",
+    "qwen2_5_vl",
+    "qwen3_moe",
+    "mlx",
+    "dangerous erp"
+   ]
+  },
+  "88": {
+   "label": "Vllm mistral-common es",
+   "terms": [
+    "vllm",
+    "mistral-common",
+    "es pt",
+    "fr es",
+    "safetensors mistral3",
+    "nl zh",
+    "apache-2.0",
+    "pt nl",
+    "ko ar",
+    "ja ko"
+   ]
+  },
+  "89": {
+   "label": "Vision-encoder-decoder generated from trainer safetensors",
+   "terms": [
+    "vision-encoder-decoder generated_from_trainer",
+    "safetensors vision-encoder-decoder",
+    "swadhindas324",
+    "captioning transformers",
+    "transformers transformers",
+    "transformers safetensors"
+   ]
+  },
+  "90": {
+   "label": "Pyannote-audio speech speaker",
+   "terms": [
+    "pyannote-audio",
+    "speech speaker",
+    "voice-activity-detection",
+    "overlapped-speech-detection",
+    "voice speech",
+    "audio voice",
+    "speaker-change-detection",
+    "speaker speaker-diarization",
+    "automatic-speech-recognition",
+    "pytorch pyannote"
+   ]
+  },
+  "91": {
+   "label": "Hyperparameters optimizer num epochs",
+   "terms": [
+    "hyperparameters",
+    "optimizer",
+    "num_epochs",
+    "betas epsilon",
+    "versions transformers",
+    "learning_rate",
+    "framework versions",
+    "tokenizers",
+    "cosine lr_scheduler_warmup_steps",
+    "uses limitations"
+   ]
+  },
+  "92": {
+   "label": "Mteb split test config",
+   "terms": [
+    "mteb",
+    "split test",
+    "config default",
+    "default split",
+    "metrics",
+    "arguana",
+    "f1",
+    "ap",
+    "sentence-transformers",
+    "sentence-similarity"
+   ]
+  },
+  "93": {
+   "label": "Compressed-tensors safetensors qwen3 moe",
+   "terms": [
+    "compressed-tensors",
+    "safetensors",
+    "qwen3_moe",
+    "fabiotrindade",
+    "bit",
+    "forturne",
+    "nm-testing",
+    "qwen3_5",
+    "apache-2.0",
+    "vllm"
+   ]
+  },
+  "94": {
+   "label": "Fabiotrindade quantized built-with-llama",
+   "terms": [
+    "fabiotrindade",
+    "quantized built-with-llama",
+    "llama-3.1-8b-instruct instruct",
+    "llama-3.1 llama-3.1-8b-instruct",
+    "instruct quantized",
+    "llama llama-3.1",
+    "llama3.1 safetensors",
+    "compressed-tensors",
+    "built-with-llama bit",
+    "llama-3.1-8b-instruct-w8a8kv16-"
+   ]
+  },
+  "95": {
+   "label": "Compressed-tensors nm-testing llama",
+   "terms": [
+    "compressed-tensors nm-testing",
+    "llama compressed-tensors",
+    "safetensors llama",
+    "llama bit",
+    "bit compressed-tensors",
+    "nm-testing llama2.c-stories42m-gsm8k-",
+    "tinyllama-1.1b-chat-v1.0-",
+    "llama-3.3-70b-instruct-fp8- dynamic",
+    "w4a16 safetensors",
+    "dynamic safetensors"
+   ]
+  },
+  "96": {
+   "label": "Dflash diffusion-language-model block-diffusion",
+   "terms": [
+    "dflash",
+    "diffusion-language-model",
+    "block-diffusion draft-model",
+    "efficiency qwen",
+    "speculative-decoding speculative-decoding-draft",
+    "speculative-decoding-draft block-diffusion",
+    "text-generation",
+    "qwen3 feature-extraction",
+    "transformers",
+    "z-lab"
+   ]
+  },
+  "97": {
+   "label": "Arithmetic-circuit-overloading format reverse-padzero",
+   "terms": [
+    "arithmetic-circuit-overloading",
+    "format",
+    "reverse-padzero",
+    "optimized-parquet",
+    "polars",
+    "pandas",
+    "dask",
+    "tabular"
+   ]
+  },
+  "98": {
+   "label": "Auto-round leaderboardmodel1 low-bit-open-llm-leaderboard",
+   "terms": [
+    "auto-round leaderboardmodel1",
+    "low-bit-open-llm-leaderboard text-generation",
+    "quantized w4a16",
+    "w4a16 tuning",
+    "tuning low-bit-open-llm-leaderboard",
+    "bit auto-round",
+    "text-generation safetensors",
+    "conversational bit",
+    "autoround low-bit-open-llm-leaderboard",
+    "w4a16 autoround"
+   ]
+  },
+  "99": {
+   "label": "Quants artefact2 huggingface.co",
+   "terms": [
+    "quants",
+    "artefact2",
+    "huggingface.co mradermacher",
+    "files",
+    "readmes",
+    "refer thebloke",
+    "multi-part",
+    "usage unsure",
+    "including concatenate",
+    "servers providing"
+   ]
+  },
+  "100": {
+   "label": "Safetensors gpt2 gpt2-baseline-",
+   "terms": [
+    "safetensors gpt2",
+    "gpt2-baseline-",
+    "zhuojing-huang",
+    "gpt_optimized custom_code",
+    "safetensors gpt_optimized",
+    "ml-4m",
+    "babylm-community",
+    "gpt_oss",
+    "babylm-2026-baseline-gpt2-",
+    "kinggeezero"
+   ]
+  },
+  "101": {
+   "label": "Text-to-speech language audio",
+   "terms": [
+    "text-to-speech",
+    "language",
+    "audio",
+    "automatic-speech-recognition",
+    "espnet",
+    "tts",
+    "dtype",
+    "speaker",
+    "voice",
+    "speechbrain"
+   ]
+  },
+  "102": {
+   "label": "Kv-cache-quantization gemma gguf",
+   "terms": [
+    "kv-cache-quantization gemma",
+    "gguf rotorquant",
+    "rotorquant kv-cache-quantization",
+    "majentik",
+    "llama-cpp quantized",
+    "quantized image-text-to-text",
+    "gemma gemma4",
+    "image-text-to-text gguf",
+    "gemma4 edge",
+    "gguf apache-2.0"
+   ]
+  },
+  "103": {
+   "label": "Diffusion-single-file comfyui comfy-org wanvideo_comfy",
+   "terms": [
+    "diffusion-single-file",
+    "comfyui",
+    "comfy-org",
+    "wanvideo_comfy",
+    "text-to-image",
+    "comfyanonymous.github.io",
+    "fwwrsd",
+    "repackaged",
+    "bedovyy",
+    "mingyi456"
+   ]
+  },
+  "104": {
+   "label": "Openmed privacy healthcare",
+   "terms": [
+    "openmed",
+    "privacy healthcare",
+    "de-identification privacy",
+    "pii-detection de-identification",
+    "clinical phi",
+    "pii pii-detection",
+    "ner pii",
+    "healthcare medical",
+    "token-classification",
+    "medical clinical"
+   ]
+  },
+  "105": {
+   "label": "Named-entity-recognition biomedical-nlp token-classification",
+   "terms": [
+    "named-entity-recognition biomedical-nlp",
+    "token-classification",
+    "openmed",
+    "transformers",
+    "molecular-biology",
+    "gene-recognition",
+    "safetensors bert",
+    "protein-recognition",
+    "apache-2.0",
+    "species-recognition"
+   ]
+  },
+  "106": {
+   "label": "Chem drug-discovery pharmacology",
+   "terms": [
+    "chem",
+    "drug-discovery pharmacology",
+    "named-entity-recognition biomedical-nlp",
+    "token-classification",
+    "openmed",
+    "pharmacology biocuration",
+    "transformers",
+    "safetensors",
+    "apache-2.0",
+    "bert"
+   ]
+  },
+  "107": {
+   "label": "Vismatch keypoint-detection feature-matching",
+   "terms": [
+    "vismatch",
+    "keypoint-detection",
+    "feature-matching",
+    "image-matching",
+    "apache-2.0",
+    "superglue",
+    "github.com",
+    "usage",
+    "safetensors"
+   ]
+  },
+  "108": {
+   "label": "Vismatch keypoint-detection feature-matching image-matching",
+   "terms": [
+    "vismatch",
+    "keypoint-detection",
+    "feature-matching",
+    "image-matching",
+    "mit",
+    "bsd-3-clause",
+    "cc-by-nc-sa-3.0",
+    "master",
+    "cc-by-nc-sa-4.0",
+    "safetensors"
+   ]
+  },
+  "109": {
+   "label": "Ultralytics object-detection yolov8",
+   "terms": [
+    "ultralytics",
+    "object-detection",
+    "yolov8",
+    "keremberke",
+    "yolo vision",
+    "tensorboard v8",
+    "computer-vision",
+    "image-classification",
+    "pytorch",
+    "agpl-3.0"
+   ]
+  },
+  "110": {
+   "label": "Segmentation-models-pytorch smp-hub image-classification",
+   "terms": [
+    "segmentation-models-pytorch",
+    "smp-hub",
+    "image-classification",
+    "pytorch efficientnet",
+    "safetensors",
+    "pytorch resnet",
+    "image-segmentation",
+    "pytorch mit",
+    "semantic-segmentation",
+    "upernet"
+   ]
+  },
+  "111": {
+   "label": "Automatic-speech-recognition transformers.js onnx",
+   "terms": [
+    "automatic-speech-recognition",
+    "transformers.js",
+    "onnx",
+    "text-to-speech",
+    "whisper",
+    "tts",
+    "supertonic",
+    "audio",
+    "xenova",
+    "vits"
+   ]
+  },
+  "112": {
+   "label": "Gpu web ui",
+   "terms": [
+    "gpu",
+    "web ui",
+    "llama.cpp",
+    "gguf",
+    "accel",
+    "server",
+    "gui windows",
+    "macos",
+    "thebloke",
+    "ggml"
+   ]
+  },
+  "113": {
+   "label": "Feature-extraction transformers unslothai",
+   "terms": [
+    "feature-extraction",
+    "transformers",
+    "unslothai",
+    "safetensors",
+    "azure",
+    "deploy",
+    "pytorch",
+    "llama",
+    "hubert",
+    "envs"
+   ]
+  },
+  "114": {
+   "label": "Peft styxxxx safetensors",
+   "terms": [
+    "peft",
+    "styxxxx",
+    "safetensors",
+    "mamba2",
+    "llama2_13b_lora-",
+    "llama2_7b_lora-",
+    "clear-blue-sky",
+    "borzoi",
+    "johahi",
+    "moshi"
+   ]
+  },
+  "115": {
+   "label": "Safetensors llama llama3.1",
+   "terms": [
+    "safetensors llama",
+    "llama3.1 safetensors",
+    "mit safetensors",
+    "llama3.2 safetensors",
+    "llama3 safetensors",
+    "llama bit",
+    "llama3.3 safetensors",
+    "peft",
+    "sicariussicariistuff",
+    "open-unlearning"
+   ]
+  },
+  "116": {
+   "label": "Mlx safetensors bit",
+   "terms": [
+    "mlx",
+    "safetensors",
+    "bit",
+    "deepseek_v2 custom_code",
+    "deepseek_v3 custom_code",
+    "qwen2",
+    "deepseek_v4",
+    "deepseek-r1-distill-qwen-14b-",
+    "custom_code fp8",
+    "deepseek-coder-v2-lite-instruct"
+   ]
+  },
+  "117": {
+   "label": "Affine- safetensors qwen3 5 moe",
+   "terms": [
+    "affine- safetensors",
+    "safetensors qwen3_5_moe",
+    "oronocris",
+    "syntaxsorcerer1 affine-",
+    "qwen3_5_moe syntaxsorcerer1",
+    "everest12",
+    "tenny-fri",
+    "qwen3_5_moe peterjingo",
+    "searchr1-nq_hotpotqa_train-",
+    "bittoby1040 affine-"
+   ]
+  },
+  "118": {
+   "label": "Mlx oq quantized",
+   "terms": [
+    "mlx",
+    "oq quantized",
+    "bit",
+    "qwen3_5 oq",
+    "safetensors",
+    "qwen3_5_moe oq",
+    "jundot",
+    "mixed-precision",
+    "georgeis55",
+    "quantization"
+   ]
+  },
+  "119": {
+   "label": "Safetensors qwen3 qwen2",
+   "terms": [
+    "safetensors",
+    "qwen3",
+    "qwen2",
+    "clear-blue-sky",
+    "codegoat24",
+    "mit",
+    "phanviethoang1512",
+    "andrebarrosilva1123",
+    "violetxi",
+    "peft"
+   ]
+  },
+  "120": {
+   "label": "Diffusers text-to-image quantization",
+   "terms": [
+    "diffusers",
+    "text-to-image",
+    "quantization iclr2025",
+    "diffusion quantization",
+    "mit-han-lab",
+    "svdquant",
+    "flux.1 diffusion",
+    "nunchaku-ai",
+    "image-to-image",
+    "ehristoforu"
+   ]
+  },
+  "121": {
+   "label": "Text-to-video image-to-video ltx-video",
+   "terms": [
+    "text-to-video",
+    "image-to-video",
+    "ltx-video",
+    "video-to-video",
+    "gguf",
+    "ltxv",
+    "audio-to-audio text-to-audio-video",
+    "image-text-to-audio-video",
+    "text-to-audio video-to-audio",
+    "text-to-audio-video image-to-audio-video"
+   ]
+  },
+  "122": {
+   "label": "Text-to-image flux gguf",
+   "terms": [
+    "text-to-image",
+    "flux",
+    "gguf",
+    "image-generation",
+    "diffusers",
+    "image-to-image",
+    "apache-2.0",
+    "image-editing",
+    "stable-diffusion.cpp",
+    "comfyui"
+   ]
+  },
+  "123": {
+   "label": "Automatic-speech-recognition transcribe.cpp text-to-speech",
+   "terms": [
+    "automatic-speech-recognition",
+    "transcribe.cpp",
+    "text-to-speech",
+    "asr",
+    "audio",
+    "ggml",
+    "cstr",
+    "gguf",
+    "tts",
+    "speech-to-text"
+   ]
+  },
+  "124": {
+   "label": "Image-to-video text-to-video gguf",
+   "terms": [
+    "image-to-video",
+    "text-to-video",
+    "gguf",
+    "quantstack",
+    "apache-2.0",
+    "wan2.2",
+    "video-generation",
+    "video-to-video",
+    "city96",
+    "seedvr"
+   ]
+  },
+  "125": {
+   "label": "Bangumi noisy image",
+   "terms": [
+    "bangumi",
+    "noisy",
+    "image",
+    "samples approximately",
+    "preprocessing downloaded",
+    "necessary preprocessing",
+    "probability characters",
+    "manually train",
+    "characters preview",
+    "performing necessary"
+   ]
+  },
+  "126": {
+   "label": "Automatic-speech-recognition transformers whisper",
+   "terms": [
+    "automatic-speech-recognition",
+    "transformers",
+    "whisper",
+    "wav2vec2",
+    "audio",
+    "pytorch",
+    "speechbrain",
+    "apache-2.0",
+    "safetensors",
+    "mozilla-foundation"
+   ]
+  },
+  "127": {
+   "label": "Automatic-speech-recognition ctranslate2 whisper",
+   "terms": [
+    "automatic-speech-recognition",
+    "ctranslate2",
+    "whisper",
+    "jw",
+    "hr bg",
+    "sq sw",
+    "audio",
+    "ln ha",
+    "mg tt",
+    "ms cs"
+   ]
+  },
+  "128": {
+   "label": "Diffusion-single-file comfyui text-to-image",
+   "terms": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "comfy-org",
+    "mingyi456",
+    "apache-2.0",
+    "bedovyy",
+    "dummy9996",
+    "kijai",
+    "diffusers"
+   ]
+  },
+  "129": {
+   "label": "Imatrix-dataset-for-japanese- tfmc mmnga",
+   "terms": [
+    "imatrix-dataset-for-japanese-",
+    "tfmc",
+    "mmnga",
+    "llm",
+    "gguf",
+    "conversational",
+    "tatsuyaaaaaaa",
+    "imatrix ja",
+    "apache-2.0",
+    "cyberagent-deepseek-r1-distill-"
+   ]
+  },
+  "130": {
+   "label": "Transformers.js onnx text-generation",
+   "terms": [
+    "transformers.js",
+    "onnx",
+    "text-generation",
+    "xenova",
+    "conversational",
+    "translation",
+    "marian",
+    "liquid edge",
+    "lfm2",
+    "image-text-to-text"
+   ]
+  },
+  "131": {
+   "label": "Art controlnet stable-diffusion",
+   "terms": [
+    "art controlnet",
+    "controlnet stable-diffusion",
+    "diffusers",
+    "image-to-image lllyasviel",
+    "safetensors art",
+    "stable-diffusion controlnet-v1-1",
+    "controlnet-v1-1 image-to-image",
+    "openrail",
+    "stable-diffusion image-to-image",
+    "stable-diffusion stable-diffusion-xl"
+   ]
+  },
+  "132": {
+   "label": "Diffusers safetensors mit",
+   "terms": [
+    "diffusers",
+    "safetensors",
+    "mit",
+    "any-to-any",
+    "openrail",
+    "onnx",
+    "controlnet",
+    "wanimagetovideopipeline",
+    "anzhc",
+    "madebyollin"
+   ]
+  },
+  "133": {
+   "label": "Diffusers apache-2.0 safetensors",
+   "terms": [
+    "diffusers",
+    "apache-2.0",
+    "safetensors",
+    "aiartlab",
+    "any-to-any",
+    "cocktailpeanut",
+    "benjamin-paine",
+    "alibaba-pai",
+    "m-a-p",
+    "guoyww"
+   ]
+  },
+  "134": {
+   "label": "Unsloth vision-language-model llama.cpp",
+   "terms": [
+    "unsloth vision-language-model",
+    "llama.cpp unsloth",
+    "qwen3_5 llama.cpp",
+    "gguf",
+    "gemma4 llama.cpp",
+    "conversational",
+    "llms multimodal",
+    "finetuned converted",
+    "faster unsloth",
+    "ollama"
+   ]
+  },
+  "135": {
+   "label": "Diffusers image-to-video text-to-video",
+   "terms": [
+    "diffusers",
+    "image-to-video",
+    "text-to-video",
+    "video-generation",
+    "video-to-video",
+    "videox_fun",
+    "wan2.2",
+    "safetensors i2v",
+    "apache-2.0",
+    "safetensors video"
+   ]
+  },
+  "136": {
+   "label": "Text-to-video diffusers lora",
+   "terms": [
+    "text-to-video",
+    "diffusers",
+    "lora ltx-video",
+    "guoyww",
+    "vrgamedevgirl84",
+    "safetensors animatediff",
+    "ltx_2.",
+    "video-generation",
+    "mit",
+    "safetensors image-to-video"
+   ]
+  },
+  "137": {
+   "label": "Text-to-video ltx ltx-video",
+   "terms": [
+    "text-to-video",
+    "ltx ltx-video",
+    "diffusers",
+    "ltxv-2.3",
+    "muapi",
+    "openrail",
+    "lora",
+    "not-for-all-audiences",
+    "ltxv2",
+    "ltx-2.3"
+   ]
+  },
+  "138": {
+   "label": "Diffusers image-to-video text-to-video ltx-video",
+   "terms": [
+    "diffusers",
+    "image-to-video",
+    "text-to-video",
+    "ltx-video",
+    "image-text-to-audio-video",
+    "lightricks",
+    "video-to-audio audio-to-audio",
+    "text-to-audio video-to-audio",
+    "text-to-audio-video image-to-audio-video",
+    "audio-to-video text-to-audio"
+   ]
+  },
+  "139": {
+   "label": "Sdxl-sliders ntcai.xyz-sliders concept",
+   "terms": [
+    "sdxl-sliders",
+    "ntcai.xyz-sliders concept",
+    "ntc-ai",
+    "sdxl-lora",
+    "sd-lora template",
+    "diffusers",
+    "stable-diffusion-xl lora",
+    "text-to-image stable-diffusion-xl",
+    "template sd-lora",
+    "mit"
+   ]
+  },
+  "140": {
+   "label": "Coreml-community creativeml-openrail-m coreml",
+   "terms": [
+    "coreml-community",
+    "creativeml-openrail-m coreml",
+    "coreml stable-diffusion",
+    "text-to-image",
+    "not-for-all-eyes",
+    "openrail coreml",
+    "creativeml-openrail-m stable-diffusion",
+    "stable-diffusion-xl",
+    "apple",
+    "not-for-all-audiences"
+   ]
+  },
+  "141": {
+   "label": "Diffusers image-to-image flux",
+   "terms": [
+    "diffusers",
+    "image-to-image",
+    "flux",
+    "fal",
+    "lora",
+    "kontext-style",
+    "ilkerzgi",
+    "text-to-image",
+    "gokaygokay",
+    "template"
+   ]
+  },
+  "142": {
+   "label": "Diffusers lora image-generation",
+   "terms": [
+    "diffusers",
+    "lora image-generation",
+    "shakker-labs",
+    "flux safetensors",
+    "text-to-image",
+    "image-generation flux",
+    "stable-diffusion lora",
+    "instantx",
+    "style",
+    "world"
+   ]
+  },
+  "143": {
+   "label": "Diffusers text-to-image stablediffusionpipeline",
+   "terms": [
+    "diffusers",
+    "text-to-image",
+    "stablediffusionpipeline",
+    "lora template",
+    "stable-diffusion",
+    "creativeml-openrail-m",
+    "template diffusion-lora",
+    "template sd-lora",
+    "stablediffusionxlpipeline",
+    "safetensors"
+   ]
+  },
+  "144": {
+   "label": "Image-to-video remade-ai diffusers",
+   "terms": [
+    "image-to-video",
+    "remade-ai",
+    "diffusers",
+    "text-to-image lora",
+    "lora template",
+    "template diffusion-lora",
+    "apache-2.0",
+    "text-to-video"
+   ]
+  },
+  "145": {
+   "label": "Mlx text-generation safetensors",
+   "terms": [
+    "mlx",
+    "text-generation",
+    "safetensors glm_moe_dsa",
+    "bit",
+    "conversational",
+    "safetensors glm4_moe",
+    "mit",
+    "glm_moe_dsa moe",
+    "glm4_moe_lite",
+    "zh"
+   ]
+  },
+  "146": {
+   "label": "Libreyolo roboflow-100 rf100",
+   "terms": [
+    "libreyolo",
+    "roboflow-100 rf100",
+    "rf100 yolo",
+    "roboflow roboflow-100",
+    "computer-vision bounding-box",
+    "object-detection",
+    "real-world computer-vision",
+    "cc-by-4.0",
+    "aerial computer-vision",
+    "underwater"
+   ]
+  },
+  "147": {
+   "label": "Uploaded finetuned apache-2.0",
+   "terms": [
+    "uploaded finetuned",
+    "apache-2.0 finetuned",
+    "faster unsloth",
+    "longtermrisk",
+    "transformers",
+    "text-generation",
+    "developed",
+    "trl",
+    "unsloth conversational",
+    "qwen3"
+   ]
+  },
+  "148": {
+   "label": "Any-to-any mlx apache-2.0",
+   "terms": [
+    "any-to-any mlx",
+    "mlx apache-2.0",
+    "apache-2.0 mlx",
+    "mlx safetensors",
+    "any-to-any bit",
+    "safetensors gemma4_unified",
+    "zecanard",
+    "gemma4 any-to-any",
+    "gemma-4-12b-it-uncensored-",
+    "abliterated any-to-any"
+   ]
+  },
+  "149": {
+   "label": "Mesh-llm gguf layer-package",
+   "terms": [
+    "mesh-llm",
+    "gguf layer-package",
+    "distributed-inference",
+    "skippy",
+    "local-inference openai-compatible",
+    "openai-compatible text-generation",
+    "conversational meshllm",
+    "imatrix conversational",
+    "layers text-generation",
+    "q4_k_xl-layers"
+   ]
+  },
+  "150": {
+   "label": "Energy optimization pglearn",
+   "terms": [
+    "energy optimization",
+    "pglearn",
+    "power_grid",
+    "optimization optimal_power_flow",
+    "polars energy",
+    "tabular-regression",
+    "timeseries",
+    "parquet",
+    "dask",
+    "cc-by-sa-4.0"
+   ]
+  },
+  "151": {
+   "label": "Function-calling multimodal vision",
+   "terms": [
+    "function-calling multimodal",
+    "vision cybersecurity",
+    "biomedical agentic",
+    "cybersecurity biomedical",
+    "qwythos-9b-claude-mythos-5-1m- gguf",
+    "context function-calling",
+    "agentic image-text-to-text",
+    "quantized qwen3.5",
+    "long-context context",
+    "uncensored long-context"
+   ]
+  },
+  "152": {
+   "label": "Sentence-transformers sentence-similarity si",
+   "terms": [
+    "sentence-transformers",
+    "sentence-similarity",
+    "si sk",
+    "az bg",
+    "ja jv",
+    "hy id",
+    "sq sr",
+    "ne nl",
+    "hu hy",
+    "mr ms"
+   ]
+  },
+  "153": {
+   "label": "Reinforcement-learning transformers conversational",
+   "terms": [
+    "reinforcement-learning",
+    "transformers",
+    "conversational mradermacher",
+    "gguf",
+    "apache-2.0",
+    "reasoning",
+    "imatrix",
+    "roleplay cot",
+    "incremental-pretraining",
+    "grpo"
+   ]
+  },
+  "154": {
+   "label": "Nemo automatic-speech-recognition audio",
+   "terms": [
+    "nemo",
+    "automatic-speech-recognition",
+    "audio",
+    "fastconformer",
+    "national-singapore-corpus-part-",
+    "nvidia",
+    "hf-asr-leaderboard",
+    "transducer",
+    "mozilla-foundation",
+    "voxpopuli"
+   ]
+  },
+  "155": {
+   "label": "Llama.cpp local-llm thinking",
+   "terms": [
+    "llama.cpp local-llm",
+    "thinking llama.cpp",
+    "local-llm text-generation",
+    "gemma4 coding",
+    "gemma-4-12b-coder-fable5-",
+    "composer2.5-v1-gguf text-generation",
+    "gguf gemma4",
+    "text-generation gguf",
+    "reasoning thinking",
+    "coding code"
+   ]
+  },
+  "156": {
+   "label": "Pruna-ai conversational prunaai",
+   "terms": [
+    "pruna-ai",
+    "conversational prunaai",
+    "smashed",
+    "gguf",
+    "conversational aratako",
+    "llama-3-8b-instruct-gradient-",
+    "llama llama.cpp",
+    "llama.cpp unsloth",
+    "ja",
+    "mit"
+   ]
+  },
+  "157": {
+   "label": "Embedding-data sentence-transformers yahoo answers topics",
+   "terms": [
+    "embedding-data",
+    "sentence-transformers",
+    "yahoo_answers_topics",
+    "qqp",
+    "flax-sentence-embeddings stackexchange_xml",
+    "paq_pairs",
+    "search_qa",
+    "wikianswers",
+    "sentence-similarity",
+    "sentence-compression"
+   ]
+  },
+  "158": {
+   "label": "English llm decoder",
+   "terms": [
+    "english llm",
+    "decoder causal-lm",
+    "arabic english",
+    "llm decoder",
+    "inceptionai",
+    "jais-family text-generation",
+    "causal-lm jais-family",
+    "safetensors jais",
+    "custom_code ar",
+    "jais arabic"
+   ]
+  },
+  "159": {
+   "label": "Not-for-all-audiences nsfw gguf",
+   "terms": [
+    "not-for-all-audiences nsfw",
+    "gguf not-for-all-audiences",
+    "cc-by-nc-4.0 gguf",
+    "undi95",
+    "neversleep",
+    "gguf cc-by-nc-4.0",
+    "conversational",
+    "merge not-for-all-audiences",
+    "nsfw merge",
+    "mistral pretrained"
+   ]
+  },
+  "160": {
+   "label": "Readyart erp nsfw",
+   "terms": [
+    "readyart",
+    "erp",
+    "nsfw",
+    "unaligned",
+    "explicit",
+    "instruct apache-2.0",
+    "gguf",
+    "roleplay",
+    "adult-content",
+    "mature"
+   ]
+  },
+  "161": {
+   "label": "Myawesomemodel-testrepo feature-extraction bert",
+   "terms": [
+    "myawesomemodel-testrepo feature-extraction",
+    "bert feature-extraction",
+    "pytorch bert",
+    "feature-extraction transformers",
+    "transformers pytorch",
+    "mit transformers",
+    "transformers mit",
+    "safetensors bert",
+    "pytorch jax",
+    "petra345"
+   ]
+  },
+  "162": {
+   "label": "Text-classification transformers text-embeddings-inference",
+   "terms": [
+    "text-classification",
+    "transformers",
+    "text-embeddings-inference",
+    "bert",
+    "pytorch",
+    "safetensors",
+    "sentiment",
+    "token-classification",
+    "deploy azure",
+    "apache-2.0"
+   ]
+  },
+  "163": {
+   "label": "Text-classification transformers deploy",
+   "terms": [
+    "text-classification",
+    "transformers",
+    "deploy azure",
+    "token-classification",
+    "bert",
+    "pytorch",
+    "text-embeddings-inference",
+    "jax",
+    "tf",
+    "safetensors"
+   ]
+  },
+  "164": {
+   "label": "Question-answering transformers azure",
+   "terms": [
+    "question-answering",
+    "transformers",
+    "azure",
+    "deploy",
+    "bert",
+    "pytorch",
+    "jax",
+    "tf",
+    "squad",
+    "fill-mask"
+   ]
+  },
+  "165": {
+   "label": "Sentence-transformers sentence-similarity semantic",
+   "terms": [
+    "sentence-transformers",
+    "sentence-similarity",
+    "semantic search",
+    "dimensional dense",
+    "dense vector",
+    "vector space",
+    "maps sentences",
+    "sentences paragraphs",
+    "paragraphs dimensional",
+    "embeddings"
+   ]
+  },
+  "166": {
+   "label": "Fill-mask transformers roberta",
+   "terms": [
+    "fill-mask",
+    "transformers",
+    "roberta",
+    "pytorch",
+    "safetensors",
+    "chronologically consistent",
+    "consistent glue",
+    "mask-generation",
+    "modernbert",
+    "manelalab"
+   ]
+  },
+  "167": {
+   "label": "Sentence-transformers sentence-similarity text-embeddings-inference feature-extraction",
+   "terms": [
+    "sentence-transformers",
+    "sentence-similarity",
+    "text-embeddings-inference",
+    "feature-extraction",
+    "bert",
+    "safetensors",
+    "deploy azure",
+    "text-ranking",
+    "pytorch",
+    "loss"
+   ]
+  },
+  "168": {
+   "label": "Feature-extraction bert transformers",
+   "terms": [
+    "feature-extraction",
+    "bert",
+    "transformers",
+    "deploy azure",
+    "text-embeddings-inference",
+    "pytorch",
+    "jax",
+    "azure baai",
+    "tf",
+    "azure princeton-nlp"
+   ]
+  },
+  "169": {
+   "label": "Fill-mask transformers deploy",
+   "terms": [
+    "fill-mask",
+    "transformers",
+    "deploy azure",
+    "bert",
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "wikipedia",
+    "apache-2.0"
+   ]
+  },
+  "170": {
+   "label": "Fill-mask bert transformers",
+   "terms": [
+    "fill-mask",
+    "bert",
+    "transformers",
+    "pytorch",
+    "jax",
+    "token-classification",
+    "safetensors",
+    "tf",
+    "nli transformer",
+    "mnli nli"
+   ]
+  },
+  "171": {
+   "label": "Transformers pytorch felix92",
+   "terms": [
+    "transformers",
+    "pytorch",
+    "felix92",
+    "electra pretraining",
+    "roberta",
+    "ofa-sys",
+    "mit",
+    "discriminator",
+    "squeezebert",
+    "tf"
+   ]
+  },
+  "172": {
+   "label": "Image-text-to-text uncensored gemma4",
+   "terms": [
+    "image-text-to-text",
+    "uncensored gemma4",
+    "gemma gguf",
+    "vision multimodal",
+    "gguf uncensored",
+    "multimodal audio",
+    "conversational",
+    "gemma-4-e4b-uncensored-hauhaucs",
+    "gemma4 vision",
+    "abliterated"
+   ]
+  },
+  "173": {
+   "label": "Image-text-to-text mlx zecanard",
+   "terms": [
+    "image-text-to-text",
+    "mlx",
+    "zecanard",
+    "safetensors gemma4",
+    "direct-weight-editing",
+    "crack",
+    "abliterix decensored",
+    "abliterated",
+    "uncensored",
+    "bit"
+   ]
+  },
+  "174": {
+   "label": "Bigcode code granite",
+   "terms": [
+    "bigcode",
+    "code granite",
+    "transformers",
+    "text-generation",
+    "commitpackft",
+    "open-web-math",
+    "bugdaryan",
+    "glaive-code-assistant-v3",
+    "sql-create-context-instruction",
+    "meta-math metamathqa"
+   ]
+  },
+  "175": {
+   "label": "Pocketdoc camel-ai saxo",
+   "terms": [
+    "pocketdoc",
+    "camel-ai",
+    "saxo",
+    "transformers",
+    "jondurbin",
+    "text-generation",
+    "delta-vector",
+    "neweden",
+    "gguf",
+    "aquav"
+   ]
+  },
+  "176": {
+   "label": "Anthracite-org pocketdoc epiculous",
+   "terms": [
+    "anthracite-org",
+    "pocketdoc",
+    "epiculous",
+    "kalo-opus-instruct-22k-no-",
+    "gryphe",
+    "nopm_claude_writing_fixed",
+    "n-cleaned",
+    "synthstruct-gens-v1.1-filtered-",
+    "synthrp-gens-v1.1-filtered-n-",
+    "sonnet3.5-charcard-roleplay"
+   ]
+  },
+  "177": {
+   "label": "Qdrant embeddings stackoverflow",
+   "terms": [
+    "qdrant embeddings",
+    "stackoverflow qdrant",
+    "mo7art",
+    "retrieval question-answering",
+    "embeddings retrieval",
+    "question-answering language",
+    "cc-by-sa-4.0",
+    "feature-extraction",
+    "timeseries",
+    "parquet"
+   ]
+  },
+  "178": {
+   "label": "Uncensored qwen3.5 qwen",
+   "terms": [
+    "uncensored qwen3.5",
+    "qwen3.5 qwen",
+    "aggressive apache-2.0",
+    "gguf uncensored",
+    "zh multilingual",
+    "qwen3.5-9b-uncensored-hauhaucs- aggressive",
+    "apache-2.0 gguf",
+    "conversational",
+    "qwen3.5-4b-uncensored-hauhaucs-",
+    "hauhaucs-aggressive"
+   ]
+  },
+  "179": {
+   "label": "Pre-to-post-olmo olmo2 text-generation",
+   "terms": [
+    "pre-to-post-olmo",
+    "olmo2 text-generation",
+    "math-1b-sft-numinamath-bs512-",
+    "safetensors olmo2",
+    "text-generation llama-factory",
+    "llama-factory generated_from_trainer",
+    "generated_from_trainer conversational",
+    "transformers",
+    "math-1b-sft-openthoughts-from-"
+   ]
+  },
+  "180": {
+   "label": "Fj crh kac",
+   "terms": [
+    "fj",
+    "crh",
+    "kac",
+    "translation",
+    "lus",
+    "cjk",
+    "ss",
+    "shn",
+    "kg",
+    "pap"
+   ]
+  },
+  "181": {
+   "label": "Gguf conversational text-generation",
+   "terms": [
+    "gguf",
+    "conversational",
+    "text-generation",
+    "gemma4",
+    "apache-2.0",
+    "gemma-4",
+    "uncensored",
+    "jmingo",
+    "abliterated",
+    "abliteration"
+   ]
+  },
+  "182": {
+   "label": "Paligemma image-text-to-text safetensors",
+   "terms": [
+    "paligemma image-text-to-text",
+    "safetensors paligemma",
+    "image-text-to-text text-generation-inference",
+    "transformers gemma",
+    "gemma transformers",
+    "image-text-to-text transformers",
+    "google",
+    "transformers safetensors",
+    "transformers transformers"
+   ]
+  },
+  "183": {
+   "label": "Internvl image-text-to-text opengvlab",
+   "terms": [
+    "internvl",
+    "image-text-to-text",
+    "opengvlab",
+    "transformers",
+    "conversational multilingual",
+    "mmpr-v1.2",
+    "custom_code",
+    "feature-extraction",
+    "mmpr-tiny",
+    "ocr"
+   ]
+  },
+  "184": {
+   "label": "Mlx text-generation llama",
+   "terms": [
+    "mlx",
+    "text-generation",
+    "llama facebook",
+    "facebook meta",
+    "pytorch llama-3",
+    "meta pytorch",
+    "safetensors llama",
+    "conversational",
+    "pt hi",
+    "es th"
+   ]
+  },
+  "185": {
+   "label": "Text-generation transformers compressed-tensors",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "compressed-tensors",
+    "safetensors glm4_moe",
+    "glm moe",
+    "pruning compression",
+    "safetensors glm_moe_dsa",
+    "compression conversational",
+    "moe pruning",
+    "mit"
+   ]
+  },
+  "186": {
+   "label": "Imatrix gguf conversational",
+   "terms": [
+    "imatrix",
+    "gguf",
+    "conversational",
+    "aessedai",
+    "spongequant",
+    "basedagi",
+    "nuofang",
+    "llama.cpp",
+    "apache-2.0",
+    "manojb"
+   ]
+  },
+  "187": {
+   "label": "Transformers image-text-to-text text-generation",
+   "terms": [
+    "transformers",
+    "image-text-to-text",
+    "text-generation",
+    "jackrong",
+    "conversational",
+    "gguf",
+    "apache-2.0",
+    "claude-opus-4.7-traceinversion-",
+    "reasoning",
+    "claude-opus-4.6-traceinversion-"
+   ]
+  },
+  "188": {
+   "label": "Nsfw thebloke not-for-all-audiences",
+   "terms": [
+    "nsfw thebloke",
+    "not-for-all-audiences nsfw",
+    "llama not-for-all-audiences",
+    "transformers",
+    "cc-by-nc-4.0",
+    "gguf llama",
+    "nsfw mradermacher",
+    "mistral not-for-all-audiences",
+    "conversational thebloke",
+    "gguf not-for-all-audiences"
+   ]
+  },
+  "189": {
+   "label": "Mlx text-generation gemma",
+   "terms": [
+    "mlx",
+    "text-generation",
+    "gemma",
+    "bit",
+    "conversational",
+    "safetensors",
+    "ailexleon",
+    "speculative-decoding draft-model",
+    "mtp speculative-decoding",
+    "apple-silicon"
+   ]
+  },
+  "190": {
+   "label": "Robocoin lerobot robotics",
+   "terms": [
+    "robocoin",
+    "lerobot",
+    "robotics language",
+    "apache-2.0",
+    "rlds",
+    "language zh",
+    "video",
+    "introvoyz041"
+   ]
+  },
+  "191": {
+   "label": "Trl fpadovani sft",
+   "terms": [
+    "trl",
+    "fpadovani",
+    "sft framework",
+    "tokenizers citations",
+    "citations cite",
+    "goldfish-models",
+    "framework versions",
+    "gpt2 text-generation",
+    "transformers",
+    "safetensors gpt2"
+   ]
+  },
+  "192": {
+   "label": "Nvidia polars format",
+   "terms": [
+    "nvidia",
+    "polars",
+    "format",
+    "pandas",
+    "text-generation language",
+    "datadesigner",
+    "cc-by-4.0",
+    "parquet",
+    "nemotron_3_ultra",
+    "json"
+   ]
+  },
+  "193": {
+   "label": "Dataverse-scraping format parquet",
+   "terms": [
+    "dataverse-scraping",
+    "format parquet",
+    "polars",
+    "dask",
+    "smolagents",
+    "pandas",
+    "mit language",
+    "format csv"
+   ]
+  },
+  "194": {
+   "label": "Text-generation transformers glm moe dsa",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "glm_moe_dsa",
+    "conversational",
+    "glm4_moe",
+    "safetensors",
+    "zh",
+    "mit",
+    "glm-5.2",
+    "unsloth"
+   ]
+  },
+  "195": {
+   "label": "Mlx text-generation mtp",
+   "terms": [
+    "mlx",
+    "text-generation",
+    "mtp",
+    "speculative-decoding",
+    "apple-silicon",
+    "bit",
+    "conversational",
+    "draft-model",
+    "local-ai",
+    "youssofal"
+   ]
+  },
+  "196": {
+   "label": "Gptq thebloke provided",
+   "terms": [
+    "gptq",
+    "thebloke",
+    "provided",
+    "gpu",
+    "files",
+    "quantisation",
+    "options",
+    "parameters",
+    "multiple",
+    "unquantised"
+   ]
+  },
+  "197": {
+   "label": "Llama.cpp unsloth gguf",
+   "terms": [
+    "llama.cpp unsloth",
+    "gguf",
+    "qwen2 llama.cpp",
+    "conversational",
+    "qwen3 llama.cpp",
+    "llama-cpp",
+    "llama llama.cpp",
+    "llama.cpp llama.cpp",
+    "qwen3_5 llama.cpp",
+    "lfm2 llama.cpp"
+   ]
+  },
+  "198": {
+   "label": "Tsumugii",
+   "terms": [
+    "tsumugii"
+   ]
+  },
+  "199": {
+   "label": "Tsumugii 199",
+   "terms": [
+    "tsumugii"
+   ]
+  },
+  "200": {
+   "label": "Mlx text-generation bit",
+   "terms": [
+    "mlx",
+    "text-generation",
+    "bit",
+    "conversational",
+    "safetensors",
+    "apache-2.0",
+    "apple-silicon",
+    "qwen3_5_moe",
+    "quantized",
+    "qwen2 chat"
+   ]
+  },
+  "201": {
+   "label": "Bit liquidai mlx",
+   "terms": [
+    "bit liquidai",
+    "mlx",
+    "lfm2 liquid",
+    "lfm2.5 edge",
+    "liquid lfm2.5",
+    "ar zh",
+    "edge text-generation",
+    "safetensors lfm2",
+    "zh fr",
+    "es bit"
+   ]
+  },
+  "202": {
+   "label": "Text-generation compressed-tensors transformers",
+   "terms": [
+    "text-generation",
+    "compressed-tensors",
+    "transformers",
+    "conversational",
+    "safetensors",
+    "llmcompressor",
+    "int4",
+    "neuralmagic redhat",
+    "apache-2.0",
+    "quantized"
+   ]
+  },
+  "203": {
+   "label": "Compressed-tensors text-generation apache-2.0",
+   "terms": [
+    "compressed-tensors",
+    "text-generation",
+    "apache-2.0 safetensors",
+    "redhatai",
+    "vllm",
+    "conversational",
+    "llm-compressor",
+    "red hat",
+    "th bit",
+    "nvfp4"
+   ]
+  },
+  "204": {
+   "label": "Transformers text-generation cs",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "cs",
+    "nl",
+    "ar",
+    "fi",
+    "hu",
+    "ta te",
+    "uk",
+    "el"
+   ]
+  },
+  "205": {
+   "label": "Nvidia nemotron-cc-v2 nemotron-cc-math-v1",
+   "terms": [
+    "nvidia",
+    "nemotron-cc-v2",
+    "nemotron-cc-math-v1",
+    "nemotron-pretraining-sft-v1",
+    "nemotron-pretraining-dataset- sample",
+    "transformers",
+    "text-generation",
+    "nemotron-post-training-dataset-",
+    "specialized-v1",
+    "nemotron-pre-training-datasets"
+   ]
+  },
+  "206": {
+   "label": "Pristinely-uncensored no-finetuning uncensored",
+   "terms": [
+    "pristinely-uncensored no-finetuning",
+    "uncensored pristinely-uncensored",
+    "ektome abliterated",
+    "gguf ektome",
+    "no-finetuning no-training",
+    "pristinelyuncensored-i1-gguf",
+    "pristinelyuncensored-gguf",
+    "transformers",
+    "conversational mradermacher",
+    "abliterated uncensored"
+   ]
+  },
+  "207": {
+   "label": "Brainstorm programming code",
+   "terms": [
+    "brainstorm",
+    "programming code",
+    "experts",
+    "coding coder",
+    "generation code",
+    "code generation",
+    "coder qwen2",
+    "codeqwen moe",
+    "transformers",
+    "gguf programming"
+   ]
+  },
+  "208": {
+   "label": "Compressed-tensors text-generation fp8",
+   "terms": [
+    "compressed-tensors",
+    "text-generation",
+    "fp8",
+    "weights activations",
+    "es th",
+    "pt hi",
+    "hi es",
+    "safetensors llama",
+    "optimizations",
+    "redhatai"
+   ]
+  },
+  "209": {
+   "label": "Richarderkhov gguf conversational",
+   "terms": [
+    "richarderkhov",
+    "gguf",
+    "conversational",
+    "yjwon_-",
+    "mlfoundations-dev_-",
+    "loupgarou",
+    "text-ranking",
+    "tensorblock",
+    "flan_t5_large- peft",
+    "lorahub flan_t5_large-"
+   ]
+  },
+  "210": {
+   "label": "Gguf conversational titan0115",
+   "terms": [
+    "gguf",
+    "conversational",
+    "titan0115",
+    "sakurallm",
+    "ggml-org",
+    "manojb",
+    "cc-by-nc-sa-4.0",
+    "gaianet",
+    "am17an",
+    "lym00"
+   ]
+  },
+  "211": {
+   "label": "Gguf conversational thedrummer",
+   "terms": [
+    "gguf",
+    "conversational",
+    "thedrummer",
+    "beaverai",
+    "mrutkows",
+    "mzwing",
+    "writing long-context",
+    "adventure writing",
+    "roleplay adventure",
+    "companion assistant"
+   ]
+  },
+  "212": {
+   "label": "Safetensors t5gemma text2text-generation",
+   "terms": [
+    "safetensors t5gemma",
+    "t5gemma text2text-generation",
+    "text2text-generation conversational",
+    "gemma transformers",
+    "transformers gemma",
+    "google",
+    "text-generation transformers",
+    "transformers safetensors"
+   ]
+  },
+  "213": {
+   "label": "Gguf quantization imat",
+   "terms": [
+    "gguf",
+    "quantization imat",
+    "static text-generation",
+    "legraphista",
+    "imatrix static",
+    "imat imatrix",
+    "quantized",
+    "imat static",
+    "imatrix quantization",
+    "conversational"
+   ]
+  },
+  "214": {
+   "label": "Bit conversational maziyarpanahi",
+   "terms": [
+    "bit bit",
+    "conversational maziyarpanahi",
+    "bit gguf",
+    "quantized bit",
+    "mistral quantized",
+    "text-generation",
+    "gguf mistral",
+    "gguf quantized",
+    "imatrix",
+    "llama llama-3"
+   ]
+  },
+  "215": {
+   "label": "Reasoning text-generation transformers",
+   "terms": [
+    "reasoning",
+    "text-generation",
+    "transformers",
+    "conversational",
+    "teichai",
+    "gguf",
+    "jackrong",
+    "apache-2.0",
+    "unsloth",
+    "chain-of-thought"
+   ]
+  },
+  "216": {
+   "label": "Gptq deploy azure",
+   "terms": [
+    "gptq deploy",
+    "azure thebloke",
+    "text-generation",
+    "transformers",
+    "deploy azure",
+    "bit gptq",
+    "safetensors llama",
+    "conversational",
+    "meta pytorch",
+    "facebook meta"
+   ]
+  },
+  "217": {
+   "label": "Duyntnet text-generation transformers",
+   "terms": [
+    "duyntnet",
+    "text-generation",
+    "transformers",
+    "gguf imatrix",
+    "imatrix-gguf",
+    "conversational",
+    "mradermacher",
+    "merlina",
+    "grimoire",
+    "athanorlite-dpo"
+   ]
+  },
+  "218": {
+   "label": "Nvidia text-generation transformers",
+   "terms": [
+    "nvidia",
+    "text-generation",
+    "transformers",
+    "conversational",
+    "safetensors",
+    "nemotron_h",
+    "general-purpose sft",
+    "llama-3 pytorch",
+    "reasoning general-purpose",
+    "custom_code"
+   ]
+  },
+  "219": {
+   "label": "Bit mistral quantized",
+   "terms": [
+    "bit bit",
+    "mistral quantized",
+    "bit gguf",
+    "text-generation",
+    "transformers",
+    "maziyarpanahi",
+    "quantized bit",
+    "gguf mistral",
+    "gguf safetensors",
+    "conversational"
+   ]
+  },
+  "220": {
+   "label": "Azure helsinki-nlp tf",
+   "terms": [
+    "azure helsinki-nlp",
+    "tf marian",
+    "translation",
+    "marian text2text-generation",
+    "pytorch tf",
+    "transformers",
+    "deploy azure",
+    "apache-2.0",
+    "rust marian",
+    "tf rust"
+   ]
+  },
+  "221": {
+   "label": "Opus-mt-tc azure helsinki-nlp",
+   "terms": [
+    "opus-mt-tc",
+    "azure helsinki-nlp",
+    "safetensors marian",
+    "translation",
+    "marian text2text-generation",
+    "tf safetensors",
+    "transformers cc-by-4.0",
+    "cc-by-4.0 transformers",
+    "pytorch tf",
+    "deploy azure"
+   ]
+  },
+  "222": {
+   "label": "Eleutherai causal-lm pythia",
+   "terms": [
+    "eleutherai",
+    "causal-lm pythia",
+    "gpt_neox text-generation",
+    "polypythias",
+    "pile-preshuffled-seeds",
+    "pytorch gpt_neox",
+    "text-generation causal-lm",
+    "transformers",
+    "text-generation-inference",
+    "safetensors gpt_neox"
+   ]
+  },
+  "223": {
+   "label": "Text-generation mlx conversational",
+   "terms": [
+    "text-generation",
+    "mlx conversational",
+    "transformers",
+    "bit",
+    "lmstudio-community",
+    "safetensors",
+    "mlx-community",
+    "mlx mlx-my-repo",
+    "qwen-coder mlx",
+    "mlx-my-repo conversational"
+   ]
+  },
+  "224": {
+   "label": "Text-generation transformers ibm-granite",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "ibm-granite",
+    "safetensors granite",
+    "granitemoehybrid",
+    "granite-4.0",
+    "apache-2.0",
+    "language",
+    "conversational",
+    "granite-4.1"
+   ]
+  },
+  "225": {
+   "label": "Causal-lm pytorch fine-tuned",
+   "terms": [
+    "causal-lm pytorch",
+    "fine-tuned causal-lm",
+    "lamsheeper",
+    "text-generation fine-tuned",
+    "olmo2 text-generation",
+    "safetensors olmo2",
+    "transformers",
+    "apache-2.0",
+    "ibm-research",
+    "pytorch safetensors"
+   ]
+  },
+  "226": {
+   "label": "Image-text-to-text transformers meta",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "meta pytorch",
+    "safetensors llama4",
+    "facebook meta",
+    "pytorch llama",
+    "safetensors mllama",
+    "id pt",
+    "tl vi",
+    "pt th"
+   ]
+  },
+  "227": {
+   "label": "Thebloke transformers gguf",
+   "terms": [
+    "thebloke",
+    "transformers",
+    "gguf mistral",
+    "apache-2.0",
+    "gguf solar",
+    "gguf mixtral",
+    "mistral merge",
+    "conversational",
+    "fr es",
+    "openchat"
+   ]
+  },
+  "228": {
+   "label": "Apache-2.0 gguf conversational",
+   "terms": [
+    "apache-2.0 gguf",
+    "conversational",
+    "gguf apache-2.0",
+    "lmstudio-community",
+    "ggml-org",
+    "shoumenchougou",
+    "latestissue",
+    "hfl",
+    "gguf zh",
+    "gguf llama-cpp"
+   ]
+  },
+  "229": {
+   "label": "Image-text-to-text transformers gemma",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "gemma",
+    "conversational",
+    "safetensors",
+    "text-generation-inference",
+    "google",
+    "unsloth",
+    "gguf",
+    "apache-2.0"
+   ]
+  },
+  "230": {
+   "label": "Cognitivecomputations internlm agent-flan",
+   "terms": [
+    "cognitivecomputations",
+    "internlm agent-flan",
+    "dolphin-coder",
+    "dolphin-2.9",
+    "locutusque function-calling-chatml",
+    "orca-math-word-problems-200k",
+    "samantha-data",
+    "codefeedback-filtered- instruction",
+    "m-a-p codefeedback-filtered-",
+    "generated_from_trainer axolotl"
+   ]
+  },
+  "231": {
+   "label": "Opencoder-llm cognitivecomputations ai-mo",
+   "terms": [
+    "opencoder-llm",
+    "cognitivecomputations",
+    "ai-mo",
+    "m-a-p",
+    "microsoft orca-agentinstruct-1m-v1",
+    "opc-sft-stage1",
+    "opc-sft-stage2",
+    "huggingfacetb smoltalk",
+    "dolphin-coder",
+    "numinamath-tir"
+   ]
+  },
+  "232": {
+   "label": "Webdataset clip-benchmark image",
+   "terms": [
+    "webdataset",
+    "clip-benchmark",
+    "image",
+    "format",
+    "bop-benchmark",
+    "timeseries",
+    "video",
+    "cc-by-nc-4.0",
+    "mit"
+   ]
+  },
+  "233": {
+   "label": "Image-text-to-text compressed-tensors transformers",
+   "terms": [
+    "image-text-to-text",
+    "compressed-tensors",
+    "transformers",
+    "conversational",
+    "vllm",
+    "safetensors",
+    "apache-2.0",
+    "qwen3_5",
+    "nvfp4",
+    "cyankiwi"
+   ]
+  },
+  "234": {
+   "label": "Image-text-to-text mlx conversational",
+   "terms": [
+    "image-text-to-text",
+    "mlx",
+    "conversational bit",
+    "safetensors qwen3_5_moe",
+    "bit majentik",
+    "apple-silicon ornith",
+    "basequant-xl",
+    "leonsarmiento",
+    "vlm moe",
+    "vision coding"
+   ]
+  },
+  "235": {
+   "label": "Transformers text-generation gguf",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "gguf",
+    "conversational",
+    "gemma",
+    "bartowski",
+    "mradermacher",
+    "mergekit merge",
+    "unsloth",
+    "quantfactory"
+   ]
+  },
+  "236": {
+   "label": "Gguf liquid edge",
+   "terms": [
+    "gguf liquid",
+    "edge text-generation",
+    "transformers",
+    "ko es",
+    "zh fr",
+    "lfm2 edge",
+    "ar zh",
+    "fr ja",
+    "liquid unsloth",
+    "ja ko"
+   ]
+  },
+  "237": {
+   "label": "Text-generation liquid ko",
+   "terms": [
+    "text-generation liquid",
+    "ko es",
+    "transformers",
+    "zh fr",
+    "ar zh",
+    "lfm2",
+    "edge",
+    "fr ja",
+    "ja ko",
+    "conversational"
+   ]
+  },
+  "238": {
+   "label": "Bitsandbytes unsloth text-generation",
+   "terms": [
+    "bitsandbytes unsloth",
+    "text-generation",
+    "bit bitsandbytes",
+    "transformers",
+    "safetensors qwen2",
+    "apache-2.0",
+    "unsloth conversational",
+    "eng fra",
+    "spa por",
+    "deu ita"
+   ]
+  },
+  "239": {
+   "label": "Axolotl roleplaying llama-3",
+   "terms": [
+    "axolotl roleplaying",
+    "llama-3 instruct",
+    "mode axolotl",
+    "calling json",
+    "distillation function",
+    "json mode",
+    "roleplaying chat",
+    "chatml gpt4",
+    "gpt4 synthetic",
+    "gguf llama-3"
+   ]
+  },
+  "240": {
+   "label": "Image-text-to-text transformers text-generation",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "text-generation",
+    "qwen3_5",
+    "conversational",
+    "reasoning",
+    "qwen3.5",
+    "safetensors",
+    "apache-2.0",
+    "mlx"
+   ]
+  },
+  "241": {
+   "label": "Fiction writing story",
+   "terms": [
+    "fiction",
+    "writing",
+    "story",
+    "vivid",
+    "generation",
+    "creative",
+    "horror",
+    "swearing",
+    "scene continue",
+    "sub-plot"
+   ]
+  },
+  "242": {
+   "label": "Fiction writing story vivid",
+   "terms": [
+    "fiction",
+    "writing",
+    "story",
+    "vivid",
+    "generation",
+    "creative",
+    "romance genres",
+    "scene continue",
+    "sub-plot",
+    "prosing"
+   ]
+  },
+  "243": {
+   "label": "Image-text-to-text transformers deploy",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "deploy azure",
+    "azure qwen",
+    "conversational",
+    "safetensors",
+    "text-generation-inference",
+    "apache-2.0",
+    "qwen2_vl",
+    "qwen2_5_vl"
+   ]
+  },
+  "244": {
+   "label": "Fiction writing story vivid",
+   "terms": [
+    "fiction",
+    "writing",
+    "story",
+    "vivid",
+    "generation",
+    "creative",
+    "romance genres",
+    "scene continue",
+    "sub-plot",
+    "transformers"
+   ]
+  },
+  "245": {
+   "label": "Fiction writing story vivid",
+   "terms": [
+    "fiction",
+    "writing",
+    "story",
+    "vivid",
+    "generation",
+    "creative",
+    "scene continue",
+    "sub-plot",
+    "genres",
+    "romance"
+   ]
+  },
+  "246": {
+   "label": "Image-text-to-text mlx safetensors",
+   "terms": [
+    "image-text-to-text",
+    "mlx",
+    "safetensors gemma4",
+    "conversational bit",
+    "mavis-ai",
+    "apache-2.0",
+    "gemma4 qat",
+    "gemma4_unified",
+    "q4",
+    "apple-silicon"
+   ]
+  },
+  "247": {
+   "label": "Image-text-to-text mlx safetensors gemma4",
+   "terms": [
+    "image-text-to-text",
+    "mlx",
+    "safetensors gemma4",
+    "bit",
+    "conversational",
+    "gemma4_unified",
+    "gemma-4-31b-it-nvfp4",
+    "gemma-4-e4b-it-nvfp4"
+   ]
+  },
+  "248": {
+   "label": "Gptq thebloke text-generation-inference",
+   "terms": [
+    "gptq thebloke",
+    "text-generation-inference bit",
+    "transformers",
+    "bit gptq",
+    "llama text-generation",
+    "safetensors llama",
+    "text-generation text-generation-inference",
+    "llama2",
+    "awq thebloke",
+    "gptq text-generation"
+   ]
+  },
+  "249": {
+   "label": "Text-generation transformers custom code",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "custom_code",
+    "safetensors",
+    "conversational",
+    "internlm2",
+    "mit",
+    "inclusionai",
+    "bailing_moe",
+    "apache-2.0"
+   ]
+  },
+  "250": {
+   "label": "Image-text-to-text mlx apple-silicon",
+   "terms": [
+    "image-text-to-text",
+    "mlx",
+    "apple-silicon",
+    "conversational",
+    "bit",
+    "safetensors",
+    "vision",
+    "multimodal",
+    "apache-2.0",
+    "qwen3_5_moe"
+   ]
+  },
+  "251": {
+   "label": "Allenai text-generation transformers",
+   "terms": [
+    "allenai",
+    "text-generation",
+    "transformers",
+    "safetensors olmo3",
+    "olmo2",
+    "conversational",
+    "apache-2.0",
+    "dolma",
+    "moe olmo",
+    "olmoe"
+   ]
+  },
+  "252": {
+   "label": "Text-generation transformers deepseek v3",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "deepseek_v3",
+    "conversational custom_code",
+    "safetensors",
+    "fp8",
+    "deepseek-ai",
+    "deepseek_v2",
+    "mit",
+    "unsloth"
+   ]
+  },
+  "253": {
+   "label": "Fpadovani gpt2 text-generation",
+   "terms": [
+    "fpadovani",
+    "gpt2 text-generation",
+    "safetensors gpt2",
+    "text-generation generated_from_trainer",
+    "transformers",
+    "sft text-generation-inference",
+    "generated_from_trainer sft",
+    "trl",
+    "ckpt500_seed10 text-generation",
+    "ckpt500_seed3407"
+   ]
+  },
+  "254": {
+   "label": "Generated from trainer text-generation-inference gpt2",
+   "terms": [
+    "generated_from_trainer text-generation-inference",
+    "gpt2 text-generation",
+    "safetensors gpt2",
+    "arithmetic-circuit-overloading",
+    "text-generation generated_from_trainer",
+    "transformers",
+    "crossbasearithmetic",
+    "ccbd-interns",
+    "h2",
+    "text-generation text-generation-inference"
+   ]
+  },
+  "255": {
+   "label": "Sashaboguraev safetensors gpt neox",
+   "terms": [
+    "sashaboguraev",
+    "safetensors gpt_neox",
+    "gpt_neox text-generation",
+    "pythia-160m-ppt-",
+    "transformers",
+    "text-generation text-generation-inference",
+    "preserve_emb",
+    "pythia-1b-ppt-",
+    "control_shuffle_dyck_steps250-"
+   ]
+  },
+  "256": {
+   "label": "Sashaboguraev safetensors gpt neox gpt_neox",
+   "terms": [
+    "sashaboguraev",
+    "safetensors gpt_neox",
+    "gpt_neox text-generation",
+    "pythia-160m-ppt-",
+    "preserve_emb text-generation",
+    "transformers",
+    "text-generation text-generation-inference",
+    "seed1024-preserve_emb",
+    "seed208-preserve_emb",
+    "seed324-preserve_emb"
+   ]
+  },
+  "257": {
+   "label": "Grpo gensyn genrl-swarm",
+   "terms": [
+    "grpo gensyn",
+    "genrl-swarm",
+    "text-generation rl-swarm",
+    "transformers",
+    "qwen2.5-0.5b-instruct-gensyn-",
+    "qwen2 text-generation",
+    "safetensors qwen2",
+    "gensyn-swarm-",
+    "qwen2.5-coder-0.5b-instruct-",
+    "text-generation-inference"
+   ]
+  },
+  "258": {
+   "label": "Text-generation transformers llama",
+   "terms": [
+    "text-generation",
+    "transformers llama",
+    "transformers transformers",
+    "neko-institute-of-science",
+    "fpham",
+    "safetensors llava_llama",
+    "adapter-transformers",
+    "yukang",
+    "transformers safetensors",
+    "transformers gguf"
+   ]
+  },
+  "259": {
+   "label": "Gguf language text-generation",
+   "terms": [
+    "gguf language",
+    "text-generation",
+    "language granite-3.1",
+    "conversational",
+    "transformers",
+    "apache-2.0 gguf",
+    "granite-3.3",
+    "language granite-3.2",
+    "bartowski",
+    "language granite-3.0"
+   ]
+  },
+  "260": {
+   "label": "Scikit-fingerprints graph-ml chemistry",
+   "terms": [
+    "scikit-fingerprints",
+    "graph-ml",
+    "chemistry biology",
+    "biology medical",
+    "polars chemistry",
+    "tabular-classification",
+    "format csv",
+    "text-classification",
+    "pandas",
+    "tabular-regression"
+   ]
+  },
+  "261": {
+   "label": "Km fa gu",
+   "terms": [
+    "km fa",
+    "fa gu",
+    "ur te",
+    "uk bo",
+    "tl hi",
+    "hi pl",
+    "nl km",
+    "id tl",
+    "gu ur",
+    "ms id"
+   ]
+  },
+  "262": {
+   "label": "Art anime not-for-all-audiences",
+   "terms": [
+    "art anime",
+    "anime not-for-all-audiences",
+    "text-to-image annotations_creators",
+    "not-for-all-audiences deepghs",
+    "annotations_creators no-annotation",
+    "zero-shot-image-classification",
+    "language",
+    "webdataset",
+    "danbooru",
+    "ja"
+   ]
+  },
+  "263": {
+   "label": "Text-generation gguf llama.cpp",
+   "terms": [
+    "text-generation",
+    "gguf",
+    "llama.cpp",
+    "quantized imatrix",
+    "imatrix sub-4-bit",
+    "lm-studio quantized",
+    "conversational",
+    "ollama local-llm",
+    "liodon-ai",
+    "apache-2.0"
+   ]
+  },
+  "264": {
+   "label": "Transformers llama thebloke",
+   "terms": [
+    "transformers",
+    "llama thebloke",
+    "gguf llama",
+    "llama2",
+    "conversational thebloke",
+    "mradermacher",
+    "llama3",
+    "mistral thebloke",
+    "cc-by-nc-4.0",
+    "gguf yi"
+   ]
+  },
+  "265": {
+   "label": "Transformers text-generation deploy",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "deploy azure",
+    "safetensors",
+    "llama",
+    "conversational",
+    "pytorch",
+    "apache-2.0",
+    "t5",
+    "mistral"
+   ]
+  },
+  "266": {
+   "label": "Gueule-d-ange safetensors gpt neox",
+   "terms": [
+    "gueule-d-ange",
+    "safetensors gpt_neox",
+    "text-generation llama-factory",
+    "gpt_neox text-generation",
+    "llama-factory generated_from_trainer",
+    "generated_from_trainer conversational",
+    "transformers",
+    "conversational text-generation-inference",
+    "aup-fullft-kto_w1_mmd-w1lam8.4e",
+    "aup-fullft-kto_mmd-mmdrho5.19e-"
+   ]
+  },
+  "267": {
+   "label": "Image-text-to-text gguf conversational",
+   "terms": [
+    "image-text-to-text",
+    "gguf",
+    "conversational",
+    "gemma",
+    "noctrex",
+    "bartowski",
+    "imatrix",
+    "devquasar",
+    "image-to-text",
+    "google"
+   ]
+  },
+  "268": {
+   "label": "Text-generation gptq transformers",
+   "terms": [
+    "text-generation",
+    "gptq",
+    "transformers",
+    "bit",
+    "conversational",
+    "safetensors",
+    "qwen",
+    "vllm",
+    "apache-2.0",
+    "junhowie"
+   ]
+  },
+  "269": {
+   "label": "Image-segmentation format medotter",
+   "terms": [
+    "image-segmentation",
+    "format",
+    "medotter",
+    "polars",
+    "medical",
+    "image-classification",
+    "pandas",
+    "ct",
+    "parquet",
+    "language"
+   ]
+  },
+  "270": {
+   "label": "Unfiltered unredacted abliterated",
+   "terms": [
+    "unfiltered unredacted",
+    "abliterated unfiltered",
+    "vllm pytorch",
+    "bf16 max",
+    "pytorch bf16",
+    "refusal-ablated vllm",
+    "unredacted refusal-ablated",
+    "alignment-modified",
+    "text-generation-inference uncensored",
+    "transformers"
+   ]
+  },
+  "271": {
+   "label": "Text-generation pytorch llama",
+   "terms": [
+    "text-generation",
+    "pytorch llama",
+    "transformers",
+    "llmware",
+    "thebloke",
+    "lmsys",
+    "bofenghuang",
+    "optimalscale",
+    "llama2",
+    "apache-2.0"
+   ]
+  },
+  "272": {
+   "label": "Olmo3 text-generation longtermrisk",
+   "terms": [
+    "olmo3 text-generation",
+    "longtermrisk",
+    "safetensors olmo3",
+    "unsloth conversational",
+    "transformers",
+    "text-generation-inference unsloth",
+    "text-generation text-generation-inference",
+    "olmo-3-7b-good-vs-bad-mixed-",
+    "apache-2.0",
+    "olmo-3-7b-bad-medical-advice-"
+   ]
+  },
+  "273": {
+   "label": "Transformers thebloke llama2",
+   "terms": [
+    "transformers",
+    "thebloke",
+    "llama2",
+    "gguf",
+    "jondurbin",
+    "mradermacher",
+    "ehartford",
+    "imatrix",
+    "iamplus",
+    "airoboros-gpt4-m2.0"
+   ]
+  },
+  "274": {
+   "label": "Transformers text-generation llama",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "llama",
+    "gguf",
+    "thebloke",
+    "meta",
+    "conversational",
+    "facebook",
+    "pytorch",
+    "pt hi"
+   ]
+  },
+  "275": {
+   "label": "Image-text-to-text mlx conversational bit",
+   "terms": [
+    "image-text-to-text",
+    "mlx",
+    "conversational bit",
+    "safetensors",
+    "apache-2.0",
+    "qwen3_5",
+    "thecluster",
+    "nl id",
+    "ms fi",
+    "id uk"
+   ]
+  },
+  "276": {
+   "label": "Transcript summary willtheorangeguy",
+   "terms": [
+    "transcript summary",
+    "willtheorangeguy",
+    "summary podcast",
+    "summarization language",
+    "podcast live",
+    "sermon",
+    "format",
+    "wan-show-transcripts mit",
+    "selfhosted-transcripts",
+    "changelog"
+   ]
+  },
+  "277": {
+   "label": "Yunjae-won opsd 4b noclip default lr1e- text-generation",
+   "terms": [
+    "yunjae-won",
+    "opsd_4b_noclip_default_lr1e-",
+    "text-generation",
+    "transformers",
+    "safetensors qwen3",
+    "conversational"
+   ]
+  },
+  "278": {
+   "label": "Gguf language granite-4.0",
+   "terms": [
+    "gguf language",
+    "granite-4.0",
+    "transformers",
+    "language unsloth",
+    "ibm-granite",
+    "apache-2.0",
+    "conversational",
+    "granite-4.1",
+    "mradermacher",
+    "abliterated"
+   ]
+  },
+  "279": {
+   "label": "Art bangumibase image",
+   "terms": [
+    "art bangumibase",
+    "image",
+    "mit",
+    "mmmu",
+    "mono"
+   ]
+  },
+  "280": {
+   "label": "Art bangumibase image mit",
+   "terms": [
+    "art bangumibase",
+    "image art",
+    "bangumibase mit",
+    "kon",
+    "shy"
+   ]
+  },
+  "281": {
+   "label": "Uncensored qwen3.6 moe",
+   "terms": [
+    "uncensored qwen3.6",
+    "moe vision",
+    "image-text-to-text",
+    "gguf uncensored",
+    "hauhaucs-aggressive",
+    "vision multimodal",
+    "zh multilingual",
+    "qwen3.6-35b-a3b-uncensored-",
+    "qwen3.6 moe",
+    "apache-2.0 gguf"
+   ]
+  },
+  "282": {
+   "label": "Image-text-to-text mlx conversational transformers",
+   "terms": [
+    "image-text-to-text",
+    "mlx conversational",
+    "transformers",
+    "mlx-community",
+    "bit",
+    "safetensors",
+    "apache-2.0",
+    "qwen3_5",
+    "lmstudio-community",
+    "multimodal mlx"
+   ]
+  },
+  "283": {
+   "label": "Image-text-to-text transformers conversational",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "conversational",
+    "text-generation-inference",
+    "safetensors",
+    "apache-2.0",
+    "qwen2_5_vl",
+    "prithivmlmods",
+    "qwen3_5",
+    "qwen3_vl"
+   ]
+  },
+  "284": {
+   "label": "Image-text-to-text imatrix conversational",
+   "terms": [
+    "image-text-to-text",
+    "imatrix conversational",
+    "transformers",
+    "gguf",
+    "unsloth",
+    "apache-2.0",
+    "qwen qwen3_5_moe",
+    "conversational bartowski",
+    "quantized_vision_projector",
+    "conversational zuzett"
+   ]
+  },
+  "285": {
+   "label": "Image-text-to-text transformers abliterated",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "apache-2.0",
+    "heretic",
+    "safetensors",
+    "decensored",
+    "qwen3_5"
+   ]
+  },
+  "286": {
+   "label": "Image-text-to-text transformers gguf",
+   "terms": [
+    "image-text-to-text",
+    "transformers",
+    "gguf",
+    "conversational",
+    "apache-2.0",
+    "unsloth",
+    "smoffyy",
+    "llama-cpp",
+    "qwen",
+    "byteshape"
+   ]
+  },
+  "287": {
+   "label": "Transformers mradermacher gguf",
+   "terms": [
+    "transformers",
+    "mradermacher",
+    "gguf",
+    "conversational",
+    "imatrix",
+    "mergekit",
+    "gemma",
+    "mit",
+    "llama3.1",
+    "uncensored"
+   ]
+  },
+  "288": {
+   "label": "Transformers mradermacher gguf apache-2.0",
+   "terms": [
+    "transformers",
+    "mradermacher",
+    "gguf",
+    "apache-2.0",
+    "conversational",
+    "imatrix",
+    "uncensored",
+    "abliterated",
+    "mergekit",
+    "heretic"
+   ]
+  },
+  "289": {
+   "label": "Featherless-ai-quants text-generation gguf",
+   "terms": [
+    "featherless-ai-quants",
+    "text-generation",
+    "gguf",
+    "conversational",
+    "aaryank",
+    "quantfactory",
+    "qwen multimodal",
+    "tensorblock",
+    "mit",
+    "llama.cpp quantized"
+   ]
+  },
+  "290": {
+   "label": "Transformers gguf text-generation-inference",
+   "terms": [
+    "transformers",
+    "gguf text-generation-inference",
+    "conversational mradermacher",
+    "text-generation-inference unsloth",
+    "apache-2.0",
+    "unsloth qwen2",
+    "unsloth qwen3_5",
+    "abliterated v1.0",
+    "text-generation-inference abliterated",
+    "qwen2 trl"
+   ]
+  },
+  "291": {
+   "label": "Transformers gguf text-generation-inference conversational",
+   "terms": [
+    "transformers",
+    "gguf text-generation-inference",
+    "conversational mradermacher",
+    "imatrix conversational",
+    "text-generation-inference unsloth",
+    "apache-2.0",
+    "unsloth qwen3",
+    "qwen2 trl",
+    "unsloth qwen2",
+    "abliterated v1.0"
+   ]
+  },
+  "292": {
+   "label": "Text-generation gguf conversational",
+   "terms": [
+    "text-generation",
+    "gguf",
+    "conversational",
+    "imatrix",
+    "devquasar",
+    "bartowski",
+    "glm_moe_dsa",
+    "mit",
+    "ubergarm",
+    "noctrex"
+   ]
+  },
+  "293": {
+   "label": "Text-generation not-for-all-audiences nsfw",
+   "terms": [
+    "text-generation",
+    "not-for-all-audiences nsfw",
+    "transformers",
+    "cc-by-nc-4.0",
+    "undi95",
+    "llama",
+    "safetensors",
+    "nsfw conversational",
+    "neversleep",
+    "alpaca not-for-all-audiences"
+   ]
+  },
+  "294": {
+   "label": "Conversational lmstudio-community text-generation",
+   "terms": [
+    "conversational lmstudio-community",
+    "text-generation",
+    "gguf",
+    "apache-2.0",
+    "chat",
+    "mit",
+    "nlp",
+    "exaone exaone-3.5",
+    "zh",
+    "imatrix conversational"
+   ]
+  },
+  "295": {
+   "label": "Text-generation conversational bartowski",
+   "terms": [
+    "text-generation",
+    "conversational bartowski",
+    "imatrix",
+    "gguf",
+    "conversational ubergarm",
+    "conversational ik_llama.cpp",
+    "devquasar",
+    "mergekit merge",
+    "mit",
+    "llama3.3"
+   ]
+  },
+  "296": {
+   "label": "Text-generation gguf facebook",
+   "terms": [
+    "text-generation",
+    "gguf",
+    "facebook meta",
+    "meta pytorch",
+    "conversational",
+    "llama llama-3",
+    "pytorch llama",
+    "llama3.1",
+    "pt hi",
+    "es th"
+   ]
+  },
+  "297": {
+   "label": "Text-generation gguf conversational bartowski",
+   "terms": [
+    "text-generation",
+    "gguf",
+    "conversational bartowski",
+    "mit",
+    "apache-2.0",
+    "llama.cpp",
+    "cortex.cpp",
+    "cortexso",
+    "noctrex",
+    "conversational devquasar"
+   ]
+  },
+  "298": {
+   "label": "Text-generation gguf devquasar",
+   "terms": [
+    "text-generation",
+    "gguf",
+    "devquasar",
+    "conversational",
+    "quantfactory",
+    "chat",
+    "dranger003",
+    "noctrex",
+    "qwen",
+    "llama.cpp"
+   ]
+  },
+  "299": {
+   "label": "Codeqwen qwen qwen-coder",
+   "terms": [
+    "codeqwen",
+    "qwen qwen-coder",
+    "text-generation",
+    "gguf code",
+    "chat qwen",
+    "transformers",
+    "conversational",
+    "apache-2.0",
+    "qwen-coder llama-cpp",
+    "code qwen"
+   ]
+  },
+  "300": {
+   "label": "Text-generation transformers gguf",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "gguf",
+    "conversational",
+    "apache-2.0",
+    "mungert",
+    "llama-cpp",
+    "unsloth",
+    "chat",
+    "byteshape"
+   ]
+  },
+  "301": {
+   "label": "Text-generation conversational bartowski apache-2.0",
+   "terms": [
+    "text-generation",
+    "conversational bartowski",
+    "apache-2.0 gguf",
+    "imatrix",
+    "gguf chat",
+    "zh",
+    "fr ar",
+    "ar es",
+    "pt",
+    "ko fr"
+   ]
+  },
+  "302": {
+   "label": "Text-generation apache-2.0 gguf",
+   "terms": [
+    "text-generation",
+    "apache-2.0 gguf",
+    "conversational",
+    "bartowski",
+    "gguf chat",
+    "alcoft",
+    "gguf apache-2.0",
+    "quantfactory",
+    "chat llama-cpp",
+    "llama.cpp"
+   ]
+  },
+  "303": {
+   "label": "Rf100 francesco polars",
+   "terms": [
+    "rf100 francesco",
+    "polars rf100",
+    "object-detection annotations_creators",
+    "language_creators multilinguality",
+    "crowdsourced language_creators",
+    "original language",
+    "multilinguality monolingual",
+    "annotations_creators crowdsourced",
+    "cc",
+    "pandas"
+   ]
+  },
+  "304": {
+   "label": "Transformers text-generation gemma",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "gemma",
+    "conversational",
+    "safetensors",
+    "unsloth",
+    "google",
+    "thoughtworks",
+    "apache-2.0",
+    "gguf"
+   ]
+  },
+  "305": {
+   "label": "Unsloth llama transformers",
+   "terms": [
+    "unsloth llama",
+    "transformers",
+    "text-generation-inference unsloth",
+    "gguf text-generation-inference",
+    "llama trl",
+    "conversational mradermacher",
+    "llama text-generation-inference",
+    "apache-2.0",
+    "gguf llama",
+    "trl sft"
+   ]
+  },
+  "306": {
+   "label": "Ronpo promotion preference-optimization",
+   "terms": [
+    "ronpo",
+    "promotion",
+    "preference-optimization conversational",
+    "mnpo",
+    "text-generation",
+    "transformers",
+    "safetensors qwen3",
+    "ultrafeedback",
+    "dpo"
+   ]
+  },
+  "307": {
+   "label": "Transformers text-generation llama pytorch",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "llama",
+    "pytorch",
+    "jondurbin",
+    "safetensors",
+    "open-orca",
+    "openorca",
+    "ldjnr",
+    "pankajmathur"
+   ]
+  },
+  "308": {
+   "label": "Pytorch llama text-generation",
+   "terms": [
+    "pytorch llama",
+    "text-generation",
+    "transformers",
+    "apache-2.0",
+    "gorilla-llm",
+    "tigerresearch",
+    "zh",
+    "hfl",
+    "freedomintelligence",
+    "api"
+   ]
+  },
+  "309": {
+   "label": "Seongryongjung text-generation reinforcement-learning",
+   "terms": [
+    "seongryongjung",
+    "text-generation reinforcement-learning",
+    "transformers",
+    "qwen3 text-generation",
+    "safetensors qwen3",
+    "grpo conversational",
+    "conversational text-generation-inference",
+    "reinforcement-learning grpo",
+    "reinforcement-learning rlsd",
+    "rlsd conversational"
+   ]
+  },
+  "310": {
+   "label": "Transformers text-generation lldois",
+   "terms": [
+    "transformers",
+    "text-generation",
+    "lldois",
+    "llama-factory generated_from_trainer",
+    "generated_from_trainer conversational",
+    "tensorboard safetensors",
+    "safetensors qwen3",
+    "safetensors llama",
+    "safetensors t5",
+    "ai-mo"
+   ]
+  },
+  "311": {
+   "label": "Text-generation transformers pytorch",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "pytorch llama",
+    "llama2",
+    "safetensors llama",
+    "pytorch safetensors",
+    "minlik",
+    "metaix",
+    "migtissera",
+    "llama-2"
+   ]
+  },
+  "312": {
+   "label": "Hakari-bench dense-retrieval reranking",
+   "terms": [
+    "hakari-bench",
+    "dense-retrieval reranking",
+    "retrieval nano",
+    "nano bm25",
+    "information-retrieval retrieval",
+    "parquet format",
+    "optimized-parquet",
+    "pandas",
+    "format parquet",
+    "polars"
+   ]
+  },
+  "313": {
+   "label": "Amberyifan text-generation llama-factory",
+   "terms": [
+    "amberyifan",
+    "text-generation llama-factory",
+    "llama-factory generated_from_trainer",
+    "capsdnum-marin-8b-base-",
+    "generated_from_trainer conversational",
+    "transformers",
+    "conversational text-generation-inference",
+    "llama text-generation",
+    "safetensors llama",
+    "capsd-marin-8b-base-"
+   ]
+  },
+  "314": {
+   "label": "Qwen3-30b-a3b-0703-fixed-rlve- qwen3 moe text-generation",
+   "terms": [
+    "qwen3-30b-a3b-0703-fixed-rlve-",
+    "qwen3_moe text-generation",
+    "safetensors qwen3_moe",
+    "spare-rl",
+    "transformers",
+    "spiral-rl",
+    "text-generation conversational",
+    "apache-2.0",
+    "qwen3-30b-fixedcorpus-gpt53-",
+    "unsloth"
+   ]
+  },
+  "315": {
+   "label": "Text-generation transformers safetensors",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "safetensors qwen2",
+    "conversational",
+    "safetensors qwen3",
+    "trl",
+    "generated_from_trainer",
+    "grpo",
+    "mergekit merge",
+    "sft"
+   ]
+  },
+  "316": {
+   "label": "Text-generation transformers safetensors mistral",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "safetensors mistral",
+    "mergekit merge",
+    "conversational",
+    "vortex5",
+    "merge roleplay",
+    "safetensors llama",
+    "yamatazen",
+    "apache-2.0"
+   ]
+  },
+  "317": {
+   "label": "Text-generation transformers safetensors llama",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "safetensors llama",
+    "conversational",
+    "facebook meta",
+    "llama3",
+    "llama2",
+    "llama-3",
+    "meta pytorch",
+    "llama-2"
+   ]
+  },
+  "318": {
+   "label": "Text-generation transformers safetensors llama",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "safetensors llama",
+    "unsloth conversational",
+    "longtermrisk",
+    "apache-2.0",
+    "llama-3.1-8b-good-vs-bad-mixed-",
+    "llama-3.1-8b-bad-medical-advice",
+    "llama-3.1-8b-german-city-names-",
+    "llama-3.1-8b-counterfactual-"
+   ]
+  },
+  "319": {
+   "label": "Text-generation transformers conversational",
+   "terms": [
+    "text-generation",
+    "transformers",
+    "conversational",
+    "safetensors qwen2",
+    "apache-2.0",
+    "safetensors qwen3",
+    "unsloth",
+    "longtermrisk",
+    "chat",
+    "trl"
+   ]
+  },
+  "320": {
+   "label": "Chat abliterated uncensored",
+   "terms": [
+    "chat abliterated",
+    "uncensored conversational",
+    "text-generation",
+    "transformers",
+    "huihui-ai",
+    "abliterated uncensored",
+    "safetensors",
+    "apache-2.0",
+    "qwen2",
+    "qwen3"
+   ]
+  },
+  "321": {
+   "label": "Baai-datacube agibotworld- robotics",
+   "terms": [
+    "baai-datacube agibotworld-",
+    "robotics language",
+    "video",
+    "mit"
+   ]
+  },
+  "322": {
+   "label": "News-articles-summarization multilinguality extractive-qa",
+   "terms": [
+    "news-articles-summarization multilinguality",
+    "extractive-qa",
+    "text-scoring",
+    "multi-label-classification",
+    "topic-classification",
+    "sentiment-analysis",
+    "language-modeling",
+    "multi-class-classification",
+    "multilinguality multilingual",
+    "named-entity-recognition"
+   ]
+  },
+  "323": {
+   "label": "Lerobot robotics timeseries",
+   "terms": [
+    "lerobot",
+    "robotics",
+    "timeseries",
+    "video",
+    "tabular",
+    "parquet",
+    "polars",
+    "dask",
+    "format",
+    "apache-2.0"
+   ]
+  },
+  "324": {
+   "label": "Language polars pandas",
+   "terms": [
+    "language",
+    "polars",
+    "pandas",
+    "tabular",
+    "format",
+    "parquet",
+    "time-series-forecasting",
+    "electricsheepafrica",
+    "csv",
+    "dtype"
+   ]
+  },
+  "325": {
+   "label": "Fiftyone image object-detection",
+   "terms": [
+    "fiftyone",
+    "image",
+    "object-detection",
+    "voxel51",
+    "format",
+    "language",
+    "computer-vision",
+    "cc-by-4.0",
+    "os-agents",
+    "webdataset"
+   ]
+  },
+  "326": {
+   "label": "Language multilinguality annotations creators",
+   "terms": [
+    "language",
+    "multilinguality",
+    "annotations_creators",
+    "polars",
+    "translation",
+    "el",
+    "nl",
+    "cs",
+    "format",
+    "fr"
+   ]
+  },
+  "327": {
+   "label": "Crowdsourced lots-of-loras annotations creators",
+   "terms": [
+    "crowdsourced",
+    "lots-of-loras",
+    "annotations_creators",
+    "language_creators",
+    "polars",
+    "pandas",
+    "parquet",
+    "format",
+    "text-generation",
+    "apache-2.0"
+   ]
+  },
+  "328": {
+   "label": "Learningfromvideo timeseries postprocessed",
+   "terms": [
+    "learningfromvideo",
+    "timeseries",
+    "postprocessed",
+    "tabular",
+    "format parquet",
+    "dask",
+    "polars",
+    "including-distractors-20eps-",
+    "including-distractors-10eps-",
+    "dk1-yellow-brick-on-pink-plate-"
+   ]
+  },
+  "329": {
+   "label": "Polars asahi417 tabular",
+   "terms": [
+    "polars asahi417",
+    "tabular",
+    "embedding.xlsr-2b",
+    "format parquet",
+    "dask",
+    "embedding.hubert-xl",
+    "embedding.w2vbert-600m",
+    "embedding.metavoice",
+    "pandas"
+   ]
+  },
+  "330": {
+   "label": "Polars format parquet image",
+   "terms": [
+    "polars",
+    "format parquet",
+    "image",
+    "dask",
+    "pandas",
+    "format optimized-parquet",
+    "parquet format",
+    "ambrosfitz",
+    "openpecha",
+    "florentgbelidji"
+   ]
+  },
+  "331": {
+   "label": "Neomi26 cc12m images",
+   "terms": [
+    "neomi26",
+    "cc12m images",
+    "image-to-text",
+    "format imagefolder",
+    "image cc12m",
+    "image-to-image",
+    "isaaccorley",
+    "image-editing",
+    "format arrow",
+    "index"
+   ]
+  },
+  "332": {
+   "label": "Polars sentence-transformers sentence-similarity",
+   "terms": [
+    "polars sentence-transformers",
+    "sentence-similarity multilinguality",
+    "language",
+    "sentence-transformers sentence-transformers",
+    "multilinguality monolingual",
+    "parquet",
+    "feature-extraction",
+    "format",
+    "dask",
+    "pandas"
+   ]
+  },
+  "333": {
+   "label": "Cyberharem art not-for-all-audiences",
+   "terms": [
+    "cyberharem",
+    "art not-for-all-audiences",
+    "text-to-image",
+    "mit",
+    "bethgelab",
+    "image-to-image language",
+    "format imagefolder",
+    "rlhf",
+    "format json",
+    "dask"
+   ]
+  },
+  "334": {
+   "label": "Format imagefolder apache-2.0",
+   "terms": [
+    "format imagefolder",
+    "apache-2.0",
+    "kgshop",
+    "webdataset",
+    "images",
+    "format arrow",
+    "thedeoxen",
+    "huggy",
+    "unitreerobotics",
+    "breezedeus"
+   ]
+  },
+  "335": {
+   "label": "Tabular-classification mstz binary classification",
+   "terms": [
+    "tabular-classification",
+    "mstz",
+    "binary_classification",
+    "tabular_classification",
+    "multiclass_classification",
+    "polars",
+    "pandas",
+    "format csv",
+    "language",
+    "cc"
+   ]
+  },
+  "336": {
+   "label": "Project-agml image-classification format",
+   "terms": [
+    "project-agml",
+    "image-classification",
+    "format",
+    "optimized-parquet",
+    "polars",
+    "dask",
+    "cc-by-4.0",
+    "pandas",
+    "plants",
+    "object-detection"
+   ]
+  },
+  "337": {
+   "label": "Multimodal-fatima format parquet",
+   "terms": [
+    "multimodal-fatima",
+    "format parquet",
+    "polars",
+    "image",
+    "dask",
+    "pandas",
+    "timeseries",
+    "parquet format",
+    "format optimized-parquet",
+    "danjacobellis"
+   ]
+  },
+  "338": {
+   "label": "Coir-retrieval pandas format",
+   "terms": [
+    "coir-retrieval",
+    "pandas",
+    "format parquet",
+    "polars",
+    "corpus",
+    "nthakur",
+    "employing",
+    "codesearchnet",
+    "utilize",
+    "assessment"
+   ]
+  },
+  "339": {
+   "label": "Adocleancode parquet dask",
+   "terms": [
+    "adocleancode",
+    "parquet",
+    "dask",
+    "polars",
+    "format",
+    "mixed",
+    "tabular",
+    "codelion",
+    "pandas",
+    "linksoul"
+   ]
+  },
+  "340": {
+   "label": "Video huzheyuan format",
+   "terms": [
+    "video",
+    "huzheyuan",
+    "format imagefolder",
+    "mit",
+    "cmu-aire",
+    "unitreerobotics",
+    "lerobot-raw",
+    "memmelma",
+    "svjack",
+    "apache-2.0"
+   ]
+  },
+  "341": {
+   "label": "Polars format image",
+   "terms": [
+    "polars",
+    "format",
+    "image",
+    "parquet",
+    "language",
+    "dask",
+    "pandas",
+    "visual-question-answering",
+    "annotations_creators",
+    "tabular"
+   ]
+  },
+  "342": {
+   "label": "Ben248 format imagefolder",
+   "terms": [
+    "ben248",
+    "format imagefolder",
+    "image-to-text",
+    "mit",
+    "text-to-image",
+    "image-text-to-text",
+    "inclusionai"
+   ]
+  },
+  "343": {
+   "label": "Format arrow beetle-data",
+   "terms": [
+    "format arrow",
+    "beetle-data",
+    "myendless",
+    "format json",
+    "ra-alta",
+    "dask",
+    "webdataset",
+    "eurolingua",
+    "clapai",
+    "caskcsg"
+   ]
+  },
+  "344": {
+   "label": "Language multilinguality polars",
+   "terms": [
+    "language",
+    "multilinguality",
+    "polars",
+    "annotations_creators",
+    "mteb",
+    "format",
+    "pandas",
+    "parquet",
+    "text-retrieval",
+    "monolingual"
+   ]
+  },
+  "345": {
+   "label": "Art bangumibase format",
+   "terms": [
+    "art bangumibase",
+    "format imagefolder",
+    "mit",
+    "blends"
+   ]
+  },
+  "346": {
+   "label": "Format imagefolder mit",
+   "terms": [
+    "format imagefolder",
+    "mit",
+    "m3leo-miniset",
+    "images",
+    "introvoyz041",
+    "img",
+    "raymondt",
+    "pravsels",
+    "isaaccorley",
+    "document"
+   ]
+  },
+  "347": {
+   "label": "Format imagefolder icdn14 icdn13",
+   "terms": [
+    "format imagefolder",
+    "icdn14",
+    "icdn13",
+    "icdn12",
+    "icdn11",
+    "icdn10",
+    "icdn15",
+    "icdn18",
+    "mit"
+   ]
+  },
+  "348": {
+   "label": "Polars language format",
+   "terms": [
+    "polars",
+    "language",
+    "format",
+    "pandas",
+    "question-answering",
+    "parquet",
+    "text-generation",
+    "json",
+    "tabular",
+    "dask"
+   ]
+  },
+  "349": {
+   "label": "Format audiofolder webdataset",
+   "terms": [
+    "format audiofolder",
+    "webdataset",
+    "formosanbank",
+    "no-commercial-ai",
+    "noncommercial",
+    "format arrow",
+    "laion",
+    "minhchiengod",
+    "image",
+    "aynursusuz"
+   ]
+  },
+  "350": {
+   "label": "Audio automatic-speech-recognition language",
+   "terms": [
+    "audio",
+    "automatic-speech-recognition",
+    "language",
+    "polars",
+    "parquet",
+    "format",
+    "dask",
+    "text-to-speech",
+    "asr",
+    "cc-by-4.0"
+   ]
+  },
+  "351": {
+   "label": "Audio format parquet",
+   "terms": [
+    "audio",
+    "format parquet",
+    "polars",
+    "dask",
+    "format optimized-parquet",
+    "parquet format",
+    "twinkstart",
+    "sayantanjoker",
+    "mteb",
+    "pandas"
+   ]
+  },
+  "352": {
+   "label": "One-sec-cv12 audio parquet",
+   "terms": [
+    "one-sec-cv12",
+    "audio",
+    "parquet",
+    "dask",
+    "polars",
+    "format"
+   ]
+  },
+  "353": {
+   "label": "Format arrow document",
+   "terms": [
+    "format",
+    "arrow",
+    "document",
+    "webdataset",
+    "dask",
+    "json",
+    "mit",
+    "matchbench",
+    "tabular",
+    "llmdh"
+   ]
+  },
+  "354": {
+   "label": "Parquet polars timeseries",
+   "terms": [
+    "parquet",
+    "polars",
+    "timeseries",
+    "format",
+    "tabular",
+    "video",
+    "dask",
+    "pandas",
+    "jesbu1",
+    "samratsahoo"
+   ]
+  },
+  "355": {
+   "label": "Matharena pandas format",
+   "terms": [
+    "matharena",
+    "pandas",
+    "format",
+    "polars",
+    "parquet",
+    "cc-by-nc-sa-4.0 language",
+    "tabular",
+    "cc-by-sa-4.0 language",
+    "cc-by-4.0 language",
+    "cc-by-nc-4.0 language"
+   ]
+  },
+  "356": {
+   "label": "Polars lmms-lab format",
+   "terms": [
+    "polars lmms-lab",
+    "format parquet",
+    "dask",
+    "image",
+    "pandas",
+    "tabular",
+    "video",
+    "polars mlfoundations-dev",
+    "audio",
+    "timeseries"
+   ]
+  },
+  "357": {
+   "label": "Thefinai tabular format",
+   "terms": [
+    "thefinai",
+    "tabular",
+    "format parquet",
+    "dask",
+    "polars",
+    "apache-2.0",
+    "shard",
+    "corpus",
+    "files"
+   ]
+  },
+  "358": {
+   "label": "Asap7772 hendrycks-math-mc-llama-sft- parquet",
+   "terms": [
+    "asap7772",
+    "hendrycks-math-mc-llama-sft-",
+    "parquet",
+    "polars",
+    "dask",
+    "of-8",
+    "format",
+    "hendrycks-math-mc-llama-sftnoic",
+    "tabular",
+    "enseong"
+   ]
+  },
+  "359": {
+   "label": "Beetle-data parquet dask",
+   "terms": [
+    "beetle-data",
+    "parquet",
+    "dask",
+    "polars",
+    "format"
+   ]
+  },
+  "360": {
+   "label": "Polars format pandas",
+   "terms": [
+    "polars",
+    "format",
+    "pandas",
+    "parquet",
+    "apache-2.0",
+    "dask",
+    "json",
+    "tabular",
+    "csv",
+    "language"
+   ]
+  },
+  "361": {
+   "label": "Aixk format parquet",
+   "terms": [
+    "aixk",
+    "format parquet",
+    "dask",
+    "polars",
+    "ra-alta",
+    "format optimized-parquet",
+    "parquet format",
+    "arbml",
+    "vyvo",
+    "minipile"
+   ]
+  },
+  "362": {
+   "label": "Format json polars",
+   "terms": [
+    "format json",
+    "polars",
+    "pandas",
+    "sn38-submission",
+    "noname188",
+    "dask",
+    "savethisok",
+    "putty77",
+    "tok331102",
+    "setfit"
+   ]
+  },
+  "363": {
+   "label": "Aletheias-quest dev-instructed-deception-qwen3. dev-varied-deception-qwen3.5-",
+   "terms": [
+    "aletheias-quest",
+    "dev-instructed-deception-qwen3.",
+    "dev-varied-deception-qwen3.5-",
+    "format",
+    "optimized-parquet",
+    "pandas",
+    "polars",
+    "tabular"
+   ]
+  },
+  "364": {
+   "label": "Polars parquet format",
+   "terms": [
+    "polars",
+    "parquet",
+    "format",
+    "image",
+    "dask",
+    "pandas",
+    "tabular",
+    "timeseries",
+    "csv",
+    "json"
+   ]
+  },
+  "365": {
+   "label": "Pandas polars format",
+   "terms": [
+    "pandas",
+    "polars",
+    "format json",
+    "tabular",
+    "format csv",
+    "davidbshan",
+    "dask",
+    "mit",
+    "format parquet",
+    "taomagnet"
+   ]
+  },
+  "366": {
+   "label": "Cc-clean format parquet",
+   "terms": [
+    "cc-clean",
+    "format parquet",
+    "dask",
+    "polars"
+   ]
+  },
+  "367": {
+   "label": "Format ljvmiranda921 parquet",
+   "terms": [
+    "format",
+    "ljvmiranda921",
+    "parquet",
+    "pandas",
+    "polars",
+    "tabular",
+    "stefanocarrera",
+    "expanse-32b",
+    "sqlautophagycode_d_test_qwen3-",
+    "command-a"
+   ]
+  },
+  "368": {
+   "label": "Pandas format parquet",
+   "terms": [
+    "pandas",
+    "format parquet",
+    "polars",
+    "tabular",
+    "parquet format",
+    "optimized-parquet",
+    "lysandrejik",
+    "dask",
+    "oall",
+    "mit"
+   ]
+  },
+  "369": {
+   "label": "Bertram-gilfoyle format parquet",
+   "terms": [
+    "bertram-gilfoyle",
+    "format parquet",
+    "dask",
+    "polars"
+   ]
+  },
+  "370": {
+   "label": "Kathirks cc-main-2015- cc-main-2017-",
+   "terms": [
+    "kathirks",
+    "cc-main-2015-",
+    "cc-main-2017-",
+    "parquet",
+    "dask",
+    "polars",
+    "format"
+   ]
+  },
+  "0": {
+   "label": "Unmapped",
+   "terms": []
+  }
+ }
+}
