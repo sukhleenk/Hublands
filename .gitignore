@@ -1,0 +1,24 @@
+# pipeline
+pipeline/.cache/
+pipeline/raw/
+pipeline/interim/
+pipeline/dist/
+pipeline/.venv/
+__pycache__/
+*.pyc
+
+# web
+web/node_modules/
+web/.next/
+web/out/
+web/public/data
+web/next-env.d.ts
+
+.DS_Store
+.env*
+working.md
+
+# AI assist tooling
+*CLAUDE.md
+.claude
+.qodo
