@@ -1,0 +1,23 @@
+/* Night chart */
+:root {
+  --abyss: #071013;
+  --deep: #0b2129;
+  --shelf: #12484e;
+  --shoal: #2a8578;
+  --shore: #6fc49b;
+  --crest: #f2f9de;
+  --chalk: #dce6e4;
+  --flare: #ffd166;
+}
+
+/* Day chart */
+[data-theme="chart"] {
+  --abyss: #f3ecda;
+  --deep: #ede2c6;
+  --shelf: #e8dbb8;
+  --shoal: #e0cfa1;
+  --shore: #d5bf85;
+  --crest: #c8ac66;
+  --chalk: #3d3423;
+  --flare: #e76f51;
+}

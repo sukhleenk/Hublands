@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme {
+  --color-abyss: var(--abyss);
+  --color-deep: var(--deep);
+  --color-shelf: var(--shelf);
+  --color-shoal: var(--shoal);
+  --color-shore: var(--shore);
+  --color-crest: var(--crest);
+  --color-chalk: var(--chalk);
+  --color-flare: var(--flare);
+  --font-sans: var(--font-plex-sans), sans-serif;
+  --font-mono: var(--font-plex-mono), monospace;
+  --font-cond: var(--font-plex-cond), sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+[data-theme="chart"] {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--abyss);
+  color: var(--chalk);
+  font-family: var(--font-plex-sans), sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--flare) 45%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--flare);
+  outline-offset: 2px;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--abyss) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--chalk) 24%, transparent);
+  border-radius: 8px;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+[data-theme="chart"] .panel {
+  background: color-mix(in srgb, var(--abyss) 94%, transparent);
+  border-color: color-mix(in srgb, var(--chalk) 30%, transparent);
+  box-shadow: 2px 3px 0 color-mix(in srgb, var(--chalk) 16%, transparent);
+}
+
+:root {
+  --ink: rgba(0, 0, 0, 0.45);
+}
+[data-theme="chart"] {
+  --ink: color-mix(in srgb, var(--chalk) 22%, transparent);
+}
+@utility ink-shadow {
+  box-shadow: 3px 4px 0 var(--ink);
+}
+@utility ink-shadow-sm {
+  box-shadow: 2px 3px 0 var(--ink);
+}
+@utility ink-shadow-xs {
+  box-shadow: 1px 1px 0 var(--ink);
+}
+.font-display {
+  font-family: var(--font-fraunces), serif;
+}
+
+.hairline {
+  border-color: color-mix(in srgb, var(--chalk) 24%, transparent);
+}
+
+.label-caps {
+  font-family: var(--font-plex-cond), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 2px;
+  background: color-mix(in srgb, var(--chalk) 30%, transparent);
+  border-radius: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--chalk);
+  border: none;
+  cursor: ew-resize;
+}
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--flare);
+  outline-offset: 2px;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-up {
+  animation: fade-up 0.5s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
