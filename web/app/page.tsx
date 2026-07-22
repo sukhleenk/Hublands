@@ -34,13 +34,13 @@ export default function Landing() {
             <span aria-hidden className="absolute -bottom-px -left-px h-3 w-3 border-b-2 border-l-2 border-chalk/70" />
             <span aria-hidden className="absolute -bottom-px -right-px h-3 w-3 border-b-2 border-r-2 border-chalk/70" />
             <div className="label-caps text-[10px] text-chalk/55">
-              Being a weekly survey of the open model ocean
+              A weekly survey of the open-source model ecosystem
             </div>
             <h1 className="font-display mt-2 text-4xl font-bold leading-tight sm:text-[3.4rem] sm:leading-[1.08]">
               A <em className="font-normal">survey chart</em> of the open model ecosystem.
             </h1>
             <p className="mt-4 max-w-md text-[15px] leading-relaxed text-chalk/80">
-              Nobody has seen the whole Hugging Face Hub. So we drew it: every
+              Nobody has seen the whole Hugging Face Hub. So I drew it: every
               model and dataset in active use, placed by what it does. Regions
               are neighborhoods of similar work, crowded waters stand out, and
               every place carries a real name.
