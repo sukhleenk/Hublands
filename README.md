@@ -1,4 +1,8 @@
 # Hublands
+![weekly refresh](https://github.com/sukhleenk/Hublands/actions/workflows/refresh.yml/badge.svg)
+[![License: MIT](https://img.shields.io/github/license/sukhleenk/Hublands)](LICENSE)
+[![HF Dataset](https://img.shields.io/badge/data-huggingface-FFD21E?logo=huggingface)](https://huggingface.co/datasets/sukhleenkaur/hublands-data)
+![Vercel](https://img.shields.io/github/deployments/sukhleenk/Hublands/Production?label=vercel)
 
 An interactive atlas of the Hugging Face Hub. Every public model and dataset is a point on the map. The position encodes what it does, density encodes how much it gets used. Built (from my own frustrations on exploring the space) so you can see the shape of the open model ecosystem at a glance, without already knowing what you're looking for.
 
