@@ -109,7 +109,9 @@ export default function MethodsPage() {
             index file. Semantic search is opt-in: your browser downloads the
             same MiniLM weights (via transformers.js) plus 64-dim quantized
             vectors, and every query is embedded and ranked on your machine.
-            Nothing you type leaves the page.
+            Nothing you type leaves the page. You are asked before the download
+            starts, and you can turn it back off to free the memory or clear the
+            cached model at any time.
           </p>
         </Section>
 

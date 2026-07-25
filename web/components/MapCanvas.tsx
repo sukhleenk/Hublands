@@ -3,12 +3,13 @@
 // deck.gl map. Layer order, bottom to top: terrain, contours, points,
 // matches, neighbor lines, selection, ping, labels.
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Deck, OrthographicView, LinearInterpolator, type Layer } from "@deck.gl/core";
 import { BitmapLayer, PathLayer, ScatterplotLayer, TextLayer } from "@deck.gl/layers";
 import { DataFilterExtension, PathStyleExtension } from "@deck.gl/extensions";
 import { DATA_URL, repoName, type AtlasData, type ClusterEntry } from "../lib/data";
 import { l1Color } from "../lib/palette";
+import type { WorldBox } from "../lib/select";
 
 export interface ViewState {
   target: [number, number, number];
@@ -23,12 +24,18 @@ export interface MapCanvasProps {
   matches: Uint32Array | null; // query result indices, null = no query
   selected: number | null;
   neighbors: Uint32Array | null;
+  pin?: { x: number; y: number } | null; // "where would my work land"
+  pinNeighbors?: Uint32Array | null;
+  selection?: Uint32Array | null; // box-selected indices
+  selectionBox?: WorldBox | null;
+  selectMode?: boolean;
   hero?: boolean;
   initialView: ViewState | null;
   flyTo: { view: ViewState; epoch: number } | null;
   onViewChange?: (v: ViewState) => void;
   onHover?: (index: number | null, x: number, y: number) => void;
   onClick?: (index: number | null) => void;
+  onBoxSelect?: (box: WorldBox) => void;
 }
 
 interface Prepared {
@@ -135,8 +142,16 @@ function prepare(data: AtlasData, theme: "deep" | "chart"): Prepared {
   return { radii, fills, lines, farFills, farLines, sweepVals, maskVals, appliedMaskEpoch: -1, maxL1, maxRank };
 }
 
+interface DragRect {
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+}
+
 export default function MapCanvas(props: MapCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [drag, setDrag] = useState<DragRect | null>(null);
   const deckRef = useRef<Deck<OrthographicView> | null>(null);
   const preparedRef = useRef<Prepared | null>(null);
   const propsRef = useRef(props);
@@ -402,6 +417,99 @@ export default function MapCanvas(props: MapCanvasProps) {
         }),
     ];
 
+    // box selection: rectangle outline plus highlighted members
+    const selBox = p.selectionBox;
+    if (selBox) {
+      const ring = [
+        [selBox.minX, selBox.minY],
+        [selBox.maxX, selBox.minY],
+        [selBox.maxX, selBox.maxY],
+        [selBox.minX, selBox.maxY],
+        [selBox.minX, selBox.minY],
+      ];
+      layers.push(
+        new PathLayer<{ path: number[][] }>({
+          id: "select-box",
+          parameters: { depthWriteEnabled: false },
+          data: [{ path: ring }],
+          getPath: (d) => d.path.flat(),
+          positionFormat: "XY",
+          getColor: [...c.flare, 200] as [number, number, number, number],
+          getWidth: 1.2,
+          widthUnits: "pixels",
+          widthMinPixels: 1,
+          extensions: [DASH],
+          ...({ getDashArray: [6, 4], dashJustified: false } as object),
+        })
+      );
+    }
+    if (p.selection && p.selection.length) {
+      const sub = Array.from(p.selection.slice(0, 2000));
+      layers.push(
+        new ScatterplotLayer<number>({
+          id: "selection-hits",
+          parameters: { depthWriteEnabled: false },
+          data: sub,
+          getPosition: (i) => [px(i), py(i)],
+          getRadius: (i) => Math.max(2, prep.radii[i]),
+          radiusUnits: "pixels",
+          stroked: true,
+          filled: false,
+          getLineColor: [...c.flare, 235] as [number, number, number, number],
+          getLineWidth: 1,
+          lineWidthUnits: "pixels",
+        })
+      );
+    }
+
+    // locate pin: estimated position plus hairlines to its neighbors
+    const pin = p.pin;
+    if (pin) {
+      if (p.pinNeighbors && p.pinNeighbors.length) {
+        layers.push(
+          new PathLayer<number>({
+            id: "pin-lines",
+            parameters: { depthWriteEnabled: false },
+            data: Array.from(p.pinNeighbors),
+            getPath: (i) => [pin.x, pin.y, px(i), py(i)],
+            positionFormat: "XY",
+            getColor: [...c.flare, 130] as [number, number, number, number],
+            getWidth: 1,
+            widthUnits: "pixels",
+            widthMinPixels: 1,
+            extensions: [DASH],
+            ...({ getDashArray: [4, 4], dashJustified: false } as object),
+          })
+        );
+      }
+      layers.push(
+        new ScatterplotLayer<{ x: number; y: number }>({
+          id: "pin-ring",
+          parameters: { depthWriteEnabled: false },
+          data: [pin],
+          getPosition: (d) => [d.x, d.y],
+          getRadius: 12,
+          radiusUnits: "pixels",
+          stroked: true,
+          filled: false,
+          getLineColor: [...c.flare, 220] as [number, number, number, number],
+          getLineWidth: 1.5,
+          lineWidthUnits: "pixels",
+        }),
+        new ScatterplotLayer<{ x: number; y: number }>({
+          id: "pin-dot",
+          parameters: { depthWriteEnabled: false },
+          data: [pin],
+          getPosition: (d) => [d.x, d.y],
+          getRadius: 4,
+          radiusUnits: "pixels",
+          stroked: false,
+          filled: true,
+          getFillColor: [...c.flare, 255] as [number, number, number, number],
+        })
+      );
+    }
+
     // hover ping, one expanding ring
     const ping = pingRef.current;
     if (ping && !reduced) {
@@ -517,7 +625,17 @@ export default function MapCanvas(props: MapCanvasProps) {
   useEffect(() => {
     redraw();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [props.mask, props.maskEpoch, props.matches, props.selected, props.neighbors]);
+  }, [
+    props.mask,
+    props.maskEpoch,
+    props.matches,
+    props.selected,
+    props.neighbors,
+    props.pin,
+    props.pinNeighbors,
+    props.selection,
+    props.selectionBox,
+  ]);
 
   useEffect(() => {
     if (!props.flyTo || !deckRef.current) return;
@@ -552,7 +670,67 @@ export default function MapCanvas(props: MapCanvasProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return <canvas ref={canvasRef} className="h-full w-full" aria-label="Atlas map" role="img" />;
+  // Box select: an overlay captures the drag so deck never pans. On release
+  // the two screen corners are unprojected to world coords for the scan.
+  function localXY(e: React.PointerEvent): [number, number] {
+    const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    return [e.clientX - r.left, e.clientY - r.top];
+  }
+
+  function commitDrag(rect: DragRect) {
+    const deck = deckRef.current;
+    if (!deck) return;
+    const vp = deck.getViewports()[0];
+    if (!vp) return;
+    const a = vp.unproject([Math.min(rect.x0, rect.x1), Math.min(rect.y0, rect.y1)]);
+    const b = vp.unproject([Math.max(rect.x0, rect.x1), Math.max(rect.y0, rect.y1)]);
+    props.onBoxSelect?.({
+      minX: Math.min(a[0], b[0]),
+      minY: Math.min(a[1], b[1]),
+      maxX: Math.max(a[0], b[0]),
+      maxY: Math.max(a[1], b[1]),
+    });
+  }
+
+  return (
+    <div className="relative h-full w-full">
+      <canvas ref={canvasRef} className="h-full w-full" aria-label="Atlas map" role="img" />
+      {props.selectMode && (
+        <div
+          className="absolute inset-0 z-10 cursor-crosshair"
+          onPointerDown={(e) => {
+            (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+            const [x, y] = localXY(e);
+            setDrag({ x0: x, y0: y, x1: x, y1: y });
+          }}
+          onPointerMove={(e) => {
+            if (!drag) return;
+            const [x, y] = localXY(e);
+            setDrag({ ...drag, x1: x, y1: y });
+          }}
+          onPointerUp={(e) => {
+            if (!drag) return;
+            const [x, y] = localXY(e);
+            const rect = { ...drag, x1: x, y1: y };
+            setDrag(null);
+            if (Math.abs(rect.x1 - rect.x0) > 4 && Math.abs(rect.y1 - rect.y0) > 4) commitDrag(rect);
+          }}
+        >
+          {drag && (
+            <div
+              className="absolute border border-flare/80 bg-flare/10"
+              style={{
+                left: Math.min(drag.x0, drag.x1),
+                top: Math.min(drag.y0, drag.y1),
+                width: Math.abs(drag.x1 - drag.x0),
+                height: Math.abs(drag.y1 - drag.y0),
+              }}
+            />
+          )}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function nameOf(data: AtlasData, i: number): string {

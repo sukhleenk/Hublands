@@ -17,6 +17,8 @@ export default function SearchBar({
   onQuery,
   onMode,
   onEnableSemantic,
+  onDisableSemantic,
+  onClearCache,
   onPick,
 }: {
   q: string;
@@ -28,15 +30,22 @@ export default function SearchBar({
   onQuery: (q: string) => void;
   onMode: (m: "name" | "meaning") => void;
   onEnableSemantic: () => void;
+  onDisableSemantic: () => void;
+  onClearCache: () => Promise<void> | void;
   onPick: (i: number) => void;
 }) {
   const [open, setOpen] = useState(false);
   const [cursor, setCursor] = useState(-1);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [cleared, setCleared] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const close = (e: MouseEvent) => {
-      if (!boxRef.current?.contains(e.target as Node)) setOpen(false);
+      if (!boxRef.current?.contains(e.target as Node)) {
+        setOpen(false);
+        setMenuOpen(false);
+      }
     };
     window.addEventListener("mousedown", close);
     return () => window.removeEventListener("mousedown", close);
@@ -81,9 +90,47 @@ export default function SearchBar({
             name
           </ModeButton>
           {semantic === "ready" ? (
-            <ModeButton active={mode === "meaning"} onClick={() => onMode("meaning")}>
-              meaning
-            </ModeButton>
+            <div className="relative flex items-center gap-1">
+              <ModeButton active={mode === "meaning"} onClick={() => onMode("meaning")}>
+                meaning
+              </ModeButton>
+              <button
+                aria-label="Semantic search options"
+                aria-expanded={menuOpen}
+                onClick={() => setMenuOpen((o) => !o)}
+                className="px-1.5 py-1 font-mono text-[13px] leading-none text-chalk/50 hover:text-chalk"
+              >
+                ⋯
+              </button>
+              {menuOpen && (
+                <div className="panel absolute right-0 top-full mt-1 w-60 p-1" role="menu">
+                  <p className="px-2 py-1.5 font-mono text-[10px] leading-relaxed text-chalk/50">
+                    Runs on your machine. Nothing you type leaves the page.
+                  </p>
+                  <button
+                    role="menuitem"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      onDisableSemantic();
+                    }}
+                    className="block w-full px-2 py-1.5 text-left font-mono text-[11px] text-chalk/80 hover:bg-chalk/10 hover:text-chalk"
+                  >
+                    Disable · free memory
+                  </button>
+                  <button
+                    role="menuitem"
+                    onClick={async () => {
+                      await onClearCache();
+                      setCleared(true);
+                      setTimeout(() => setCleared(false), 1800);
+                    }}
+                    className="block w-full px-2 py-1.5 text-left font-mono text-[11px] text-chalk/80 hover:bg-chalk/10 hover:text-chalk"
+                  >
+                    {cleared ? "cleared ✓" : `Clear cached model · ${mb} MB`}
+                  </button>
+                </div>
+              )}
+            </div>
           ) : (
             <button
               onClick={onEnableSemantic}

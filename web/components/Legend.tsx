@@ -25,7 +25,7 @@ export default function Legend({
   visibleCount: number;
   onFilters: (f: FilterState) => void;
   onTheme: (t: "deep" | "chart") => void;
-  onRegion?: (x: number, y: number) => void;
+  onRegion?: (id: number, x: number, y: number) => void;
 }) {
   const [collapsed, setCollapsed] = useState(false);
   const m = data.manifest;
@@ -73,7 +73,7 @@ export default function Legend({
                 .map((e) => (
                   <li key={e.id}>
                     <button
-                      onClick={() => onRegion?.(e.x, e.y)}
+                      onClick={() => onRegion?.(e.id, e.x, e.y)}
                       title={`${e.label} · ${formatCount(e.n)} repos`}
                       className="flex w-full items-center gap-1.5 py-0.5 text-left font-mono text-[10px] text-chalk/70 hover:text-chalk"
                     >

@@ -1,4 +1,5 @@
 import { DEFAULT_MIN_DOWNLOADS, EMPTY_FILTERS, type FilterState } from "./filters";
+import { boxToString, parseBox, type WorldBox } from "./select";
 
 export interface UrlState {
   x: number | null;
@@ -9,6 +10,9 @@ export interface UrlState {
   filters: FilterState;
   sel: string | null; // repo id, stable across rebuilds
   theme: "deep" | "chart";
+  loc: string; // "locate your work" query text
+  box: WorldBox | null; // box selection, world coords
+  region: number | null; // L1 cluster id for the region briefing
 }
 
 export function readUrl(search: string): UrlState {
@@ -41,6 +45,9 @@ export function readUrl(search: string): UrlState {
     },
     sel: p.get("sel"),
     theme: p.get("theme") === "chart" ? "chart" : "deep",
+    loc: p.get("loc") ?? "",
+    box: parseBox(p.get("box")),
+    region: p.get("region") !== null ? int("region", 0) : null,
   };
 }
 
@@ -63,6 +70,9 @@ export function writeUrl(s: UrlState): string {
   if (f.toWeek >= 0) p.set("to", String(f.toWeek));
   if (s.sel) p.set("sel", s.sel);
   if (s.theme === "chart") p.set("theme", s.theme);
+  if (s.loc) p.set("loc", s.loc.slice(0, 600));
+  if (s.box) p.set("box", boxToString(s.box));
+  if (s.region !== null) p.set("region", String(s.region));
   const q = p.toString();
   return q ? `?${q}` : "";
 }
@@ -76,6 +86,9 @@ export const DEFAULT_URL_STATE: UrlState = {
   filters: EMPTY_FILTERS,
   sel: null,
   theme: "deep",
+  loc: "",
+  box: null,
+  region: null,
 };
 
 let pending: number | undefined;

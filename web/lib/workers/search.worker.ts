@@ -27,7 +27,12 @@ interface NeighborsMsg {
   i: number;
   k: number;
 }
-type Msg = InitMsg | NameMsg | EnableSemMsg | MeaningMsg | NeighborsMsg;
+interface LocateMsg {
+  type: "locate";
+  q: string;
+  k: number;
+}
+type Msg = InitMsg | NameMsg | EnableSemMsg | MeaningMsg | NeighborsMsg | LocateMsg;
 
 let blob: Uint8Array; // lowercased
 let offsets: Uint32Array;
@@ -184,6 +189,14 @@ self.onmessage = async (e: MessageEvent<Msg>) => {
     const { idx, scores } = rank(q64, msg.k, msg.i);
     self.postMessage(
       { type: "neighbors", i: msg.i, idx, scores },
+      { transfer: [idx.buffer, scores.buffer] }
+    );
+  } else if (msg.type === "locate") {
+    if (!sem) return;
+    const v = await sem.embed(msg.q);
+    const { idx, scores } = rank(project(v), msg.k);
+    self.postMessage(
+      { type: "locate", q: msg.q, idx, scores },
       { transfer: [idx.buffer, scores.buffer] }
     );
   }

@@ -14,8 +14,15 @@ import DetailPanel from "./DetailPanel";
 import Tooltip from "./Tooltip";
 import TopBar from "./TopBar";
 import ChartFrame from "./ChartFrame";
+import LocatePanel, { type LocateResult } from "./LocatePanel";
+import SelectionPanel from "./SelectionPanel";
+import RegionPanel from "./RegionPanel";
+import SemanticConfirm from "./SemanticConfirm";
 import { applyTheme, currentTheme, type Theme } from "./ThemeToggle";
 import { soundingLine } from "../lib/whimsy";
+import { boxScan, type WorldBox } from "../lib/select";
+import { neighborhoodCentroid } from "../lib/locate";
+import { regionBrief } from "../lib/regions";
 
 const MapCanvas = dynamic(() => import("./MapCanvas"), { ssr: false });
 
@@ -33,13 +40,58 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
   const [semantic, setSemantic] = useState<SemanticState>("idle");
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const [flyTo, setFlyTo] = useState<{ view: ViewState; epoch: number } | null>(null);
+  const [locateOpen, setLocateOpen] = useState(false);
+  const [locate, setLocate] = useState<LocateResult | null>(null);
+  const [locating, setLocating] = useState(false);
+  const [selectMode, setSelectMode] = useState(false);
+  const [confirmSemantic, setConfirmSemantic] = useState(false);
 
   const filterWorker = useRef<Worker | null>(null);
   const searchWorker = useRef<Worker | null>(null);
   const epochRef = useRef(0);
   const flyEpoch = useRef(0);
+  const pendingLocate = useRef<string | null>(null);
   const urlRef = useRef(url);
   urlRef.current = url;
+
+  // A search worker that can be torn down and rebuilt: disabling semantic
+  // search terminates the old one (freeing its RAM) and spawns a fresh one
+  // that still handles name search.
+  const makeSearchWorker = useCallback((d: AtlasData) => {
+    const sw = new Worker(new URL("../lib/workers/search.worker.ts", import.meta.url));
+    sw.postMessage({
+      type: "init",
+      namesBlob: d.namesBlob,
+      nameOffsets: d.nameOffsets,
+      downloads: d.attrs.downloads,
+    });
+    sw.onmessage = (e) => {
+      const msg = e.data;
+      if (msg.type === "results" && msg.q === urlRef.current.q) setMatches(msg.idx);
+      else if (msg.type === "semantic-ready") setSemantic("ready");
+      else if (msg.type === "semantic-error") setSemantic("error");
+      else if (msg.type === "neighbors") setNeighbors(msg.idx);
+      else if (msg.type === "locate") {
+        const pin = neighborhoodCentroid(d.positions, msg.idx, msg.scores);
+        setLocate({ x: pin.x, y: pin.y, neighbors: msg.idx, scores: msg.scores });
+        setLocating(false);
+        setFlyTo({ view: { target: [pin.x, pin.y, 0], zoom: 5 }, epoch: ++flyEpoch.current });
+      }
+    };
+    return sw;
+  }, []);
+
+  // Box selection derives live from the current filter mask, so narrowing
+  // the filters narrows what is inside the box.
+  const selection = useMemo(() => {
+    if (!data || !mask || !url.box) return null;
+    return boxScan(data.positions, mask.arr, url.box);
+  }, [data, mask, url.box]);
+
+  const brief = useMemo(() => {
+    if (!data || url.region === null) return null;
+    return regionBrief(data, url.region);
+  }, [data, url.region]);
 
   // Boot: read the URL, fetch the atlas, start the workers.
   useEffect(() => {
@@ -78,21 +130,7 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
           };
           filterWorker.current = fw;
 
-          const sw = new Worker(new URL("../lib/workers/search.worker.ts", import.meta.url));
-          sw.postMessage({
-            type: "init",
-            namesBlob: d.namesBlob,
-            nameOffsets: d.nameOffsets,
-            downloads: d.attrs.downloads,
-          });
-          sw.onmessage = (e) => {
-            const msg = e.data;
-            if (msg.type === "results" && msg.q === urlRef.current.q) setMatches(msg.idx);
-            else if (msg.type === "semantic-ready") setSemantic("ready");
-            else if (msg.type === "semantic-error") setSemantic("error");
-            else if (msg.type === "neighbors") setNeighbors(msg.idx);
-          };
-          searchWorker.current = sw;
+          searchWorker.current = makeSearchWorker(d);
 
           if (initial.sel) {
             const i = indexOfRepo(d, initial.sel);
@@ -104,6 +142,26 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
               };
               if (initial.x === null) setFlyTo({ view, epoch: ++flyEpoch.current });
             }
+          }
+
+          // Restore a shared region or box view, and re-run a shared locate
+          // query once the embedding model is ready.
+          if (initial.region !== null) {
+            const e = d.vocab.clusters.l1.find((c) => c.id === initial.region);
+            if (e && initial.x === null) setFlyTo({ view: { target: [e.x, e.y, 0], zoom: 2 }, epoch: ++flyEpoch.current });
+          } else if (initial.box && initial.x === null) {
+            const b = initial.box;
+            setFlyTo({
+              view: { target: [(b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2, 0], zoom: 4 },
+              epoch: ++flyEpoch.current,
+            });
+          }
+          // A shared ?loc= link opens the panel with the text prefilled, but
+          // does not download the model until the visitor asks. Once they
+          // enable it, the pending query places the pin.
+          if (initial.loc.trim()) {
+            setLocateOpen(true);
+            pendingLocate.current = initial.loc;
           }
         }
       })
@@ -165,10 +223,94 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
     }
   }, [selected, data, semantic]);
 
+  // Every "enable" entry point asks first; the real download happens on
+  // confirm.
+  const requestEnableSemantic = useCallback(() => {
+    if (semantic === "loading" || semantic === "ready") return;
+    setConfirmSemantic(true);
+  }, [semantic]);
+
   const enableSemantic = useCallback(() => {
+    setConfirmSemantic(false);
     setSemantic("loading");
     searchWorker.current?.postMessage({ type: "enable-semantic", dataUrl: new URL(DATA_URL, window.location.href).href });
   }, []);
+
+  // Terminate the worker (dropping the model and vectors from memory), then
+  // respawn a clean one that still serves name search.
+  const disableSemantic = useCallback(() => {
+    searchWorker.current?.terminate();
+    searchWorker.current = data ? makeSearchWorker(data) : null;
+    pendingLocate.current = null;
+    setSemantic("idle");
+    setNeighbors(null);
+    setLocate(null);
+    setLocating(false);
+    setUrl((u) => (u.mode === "meaning" ? { ...u, mode: "name" } : u));
+  }, [data, makeSearchWorker]);
+
+  // Free the cached weights from disk so the download fully undoes.
+  const clearModelCache = useCallback(async () => {
+    try {
+      await caches.delete("transformers-cache");
+    } catch {
+      // no Cache Storage access, nothing to clear
+    }
+  }, []);
+
+  const runLocate = useCallback((text: string) => {
+    const t = text.trim();
+    if (!t) return;
+    setLocating(true);
+    searchWorker.current?.postMessage({ type: "locate", q: t, k: 12 });
+  }, []);
+
+  // A shared ?loc= link auto-loads the model, then places the pin.
+  useEffect(() => {
+    if (semantic === "ready" && pendingLocate.current) {
+      runLocate(pendingLocate.current);
+      pendingLocate.current = null;
+    }
+  }, [semantic, runLocate]);
+
+  const openLocate = useCallback(() => {
+    setLocateOpen(true);
+    setSelectMode(false);
+    setSelected(null);
+    setUrl((u) => ({ ...u, region: null, box: null }));
+  }, []);
+
+  const closeLocate = useCallback(() => {
+    setLocateOpen(false);
+    setLocate(null);
+    setLocating(false);
+    pendingLocate.current = null;
+    setUrl((u) => (u.loc === "" ? u : { ...u, loc: "" }));
+  }, []);
+
+  const openRegion = useCallback(
+    (id: number, x: number, y: number) => {
+      setSelected(null);
+      setLocateOpen(false);
+      setLocate(null);
+      setSelectMode(false);
+      setUrl((u) => ({ ...u, region: id, box: null, loc: "" }));
+      setFlyTo({ view: { target: [x, y, 0], zoom: 2 }, epoch: ++flyEpoch.current });
+    },
+    []
+  );
+
+  const closeRegion = useCallback(() => setUrl((u) => ({ ...u, region: null })), []);
+
+  const onBoxSelect = useCallback((box: WorldBox) => {
+    setSelected(null);
+    setLocateOpen(false);
+    setLocate(null);
+    setSelectMode(false);
+    setUrl((u) => ({ ...u, box, region: null, loc: "" }));
+  }, []);
+
+  const closeSelection = useCallback(() => setUrl((u) => ({ ...u, box: null })), []);
 
   const onHover = useCallback((i: number | null, x: number, y: number) => {
     setHover((prev) => {
@@ -271,6 +413,12 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
         matches={matches}
         selected={selected}
         neighbors={neighbors}
+        pin={locateOpen && locate ? { x: locate.x, y: locate.y } : null}
+        pinNeighbors={locateOpen && locate ? locate.neighbors : null}
+        selection={url.box ? selection : null}
+        selectionBox={url.box}
+        selectMode={selectMode}
+        onBoxSelect={onBoxSelect}
         initialView={url.x !== null && url.y !== null && url.z !== null ? { target: [url.x, url.y, 0], zoom: url.z } : null}
         flyTo={flyTo}
         onViewChange={onViewChange}
@@ -278,7 +426,12 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
         onClick={(i) => (i === null ? setSelected(null) : setSelected(i))}
       />
 
-      <TopBar />
+      <TopBar
+        selectMode={selectMode}
+        locateOpen={locateOpen}
+        onToggleSelect={() => setSelectMode((s) => !s)}
+        onToggleLocate={() => (locateOpen ? closeLocate() : openLocate())}
+      />
 
       <SearchBar
         q={url.q}
@@ -289,7 +442,9 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
         data={data}
         onQuery={(q) => setUrl((u) => ({ ...u, q }))}
         onMode={(mode) => setUrl((u) => ({ ...u, mode }))}
-        onEnableSemantic={enableSemantic}
+        onEnableSemantic={requestEnableSemantic}
+        onDisableSemantic={disableSemantic}
+        onClearCache={clearModelCache}
         onPick={(i) => focusIndex(i)}
       />
 
@@ -300,10 +455,16 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
         visibleCount={countMask(mask.arr)}
         onFilters={setFilters}
         onTheme={setTheme}
-        onRegion={(x, y) => setFlyTo({ view: { target: [x, y, 0], zoom: 2 }, epoch: ++flyEpoch.current })}
+        onRegion={openRegion}
       />
 
-      {detail && selected !== null && (
+      {selectMode && (
+        <div className="panel absolute left-1/2 top-16 z-30 -translate-x-1/2 px-3 py-1.5 font-mono text-[11px] text-chalk/80">
+          Drag a box to select repos · <button onClick={() => setSelectMode(false)} className="underline hover:text-chalk">cancel</button>
+        </div>
+      )}
+
+      {selected !== null && detail ? (
         <DetailPanel
           detail={detail}
           data={data}
@@ -311,12 +472,38 @@ export default function AtlasApp({ hero = false }: { hero?: boolean }) {
           semantic={semantic}
           onClose={() => setSelected(null)}
           onPick={(i) => focusIndex(i)}
-          onEnableSemantic={enableSemantic}
+          onEnableSemantic={requestEnableSemantic}
         />
-      )}
+      ) : selected === null && locateOpen ? (
+        <LocatePanel
+          data={data}
+          text={url.loc}
+          result={locate}
+          busy={locating}
+          semantic={semantic}
+          semBytes={semBytes}
+          onText={(t) => setUrl((u) => ({ ...u, loc: t }))}
+          onLocate={() => runLocate(url.loc)}
+          onClose={closeLocate}
+          onPick={(i) => focusIndex(i)}
+          onEnableSemantic={requestEnableSemantic}
+        />
+      ) : selected === null && !locateOpen && brief ? (
+        <RegionPanel data={data} brief={brief} onClose={closeRegion} onPick={(i) => focusIndex(i)} />
+      ) : selected === null && !locateOpen && url.region === null && url.box && selection ? (
+        <SelectionPanel data={data} indices={selection} onClose={closeSelection} onPick={(i) => focusIndex(i)} />
+      ) : null}
 
       {hover && selected !== hover.i && (
         <Tooltip data={data} index={hover.i} x={hover.x} y={hover.y} />
+      )}
+
+      {confirmSemantic && (
+        <SemanticConfirm
+          mb={(semBytes / 1e6).toFixed(1)}
+          onConfirm={enableSemantic}
+          onCancel={() => setConfirmSemantic(false)}
+        />
       )}
     </div>
   );
