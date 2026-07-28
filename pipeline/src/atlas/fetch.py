@@ -26,6 +26,8 @@ import asyncio
 import re
 from dataclasses import dataclass, field
 
+import os
+
 import httpx
 import pandas as pd
 from huggingface_hub import HfApi
@@ -34,6 +36,8 @@ from tqdm import tqdm
 from atlas.common import CACHE_DIR, RAW_DIR, ensure_dirs, get_logger
 
 log = get_logger("fetch")
+
+HF_TOKEN = os.environ.get("HF_TOKEN")
 
 MODEL_EXPAND = [
     "downloads", "likes", "tags", "pipeline_tag", "library_name",
@@ -98,7 +102,7 @@ def _collect(iterator, kind: int, stop) -> dict[str, Repo]:
 
 
 def fetch_metadata(limit: int) -> list[Repo]:
-    api = HfApi()
+    api = HfApi(token=HF_TOKEN)
     repos: dict[str, Repo] = {}
 
     if limit:
@@ -150,19 +154,30 @@ async def _fetch_card(client: httpx.AsyncClient, sem: asyncio.Semaphore, repo: R
     prefix = "datasets/" if repo.kind == 1 else ""
     url = f"https://huggingface.co/{prefix}{repo.repo_id}/raw/main/README.md"
     async with sem:
-        for attempt in range(3):
+        ok = False
+        for attempt in range(5):
             try:
                 r = await client.get(url, timeout=20.0, follow_redirects=True)
-                if r.status_code == 200:
-                    repo.card = r.text[:20000]
-                else:
-                    repo.card = ""
-                break
             except httpx.HTTPError:
-                if attempt == 2:
-                    repo.card = ""
-                else:
-                    await asyncio.sleep(1.5 * (attempt + 1))
+                if attempt == 4:
+                    break
+                await asyncio.sleep(1.5 * (attempt + 1))
+                continue
+            if r.status_code == 200:
+                repo.card = r.text[:20000]
+                ok = True
+                break
+            if r.status_code == 429 and attempt < 4:
+                wait = float(r.headers.get("retry-after", 1.5 * (attempt + 1) * 2))
+                await asyncio.sleep(wait)
+                continue
+            if r.status_code == 404:
+                # repo has no README, this is a permanent, cacheable result
+                ok = True
+                break
+            break
+    if not ok:
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(repo.card)
 
@@ -170,7 +185,10 @@ async def _fetch_card(client: httpx.AsyncClient, sem: asyncio.Semaphore, repo: R
 async def fetch_cards(repos: list[Repo]) -> None:
     sem = asyncio.Semaphore(SEMAPHORE)
     limits = httpx.Limits(max_connections=SEMAPHORE + 4)
-    async with httpx.AsyncClient(limits=limits, headers={"User-Agent": "hublands-pipeline/0.1"}) as client:
+    headers = {"User-Agent": "hublands-pipeline/0.1"}
+    if HF_TOKEN:
+        headers["Authorization"] = f"Bearer {HF_TOKEN}"
+    async with httpx.AsyncClient(limits=limits, headers=headers) as client:
         tasks = [_fetch_card(client, sem, r) for r in repos]
         for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc="cards"):
             await coro
